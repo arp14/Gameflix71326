@@ -108,7 +108,36 @@ rather than bundling it into a supply-chain patch pass.
 
 ---
 
-## 4. Simulated CRA incident: `CVE-2026-43512`
+## 4. Exploitability analysis: is any remaining CRITICAL/HIGH finding actually reachable?
+
+A CVE present in the dependency tree isn't automatically a live risk — it
+depends on whether GameFlix's code actually exercises the vulnerable feature.
+Each remaining CRITICAL and the two remaining HIGH `jackson-databind`
+findings were checked against the app's actual configuration and source
+(`application.properties` plus a full `src/` search for the relevant
+feature), not just their CVSS score.
+
+| Finding | Requires | GameFlix's actual configuration | Reachable? |
+|---------|----------|----------------------------------|------------|
+| **CVE-2026-41293** (CRITICAL — HTTP/2 request header validation bypass) | HTTP/2 enabled on the connector | No `server.http2.enabled`, no SSL/connector customization anywhere in `application.properties` or `src/` — the app serves plain HTTP/1.1 via Spring Boot's default embedded Tomcat | **No** |
+| **CVE-2026-43512** (CRITICAL — digest-authentication bypass) | Tomcat's built-in Realm + digest `<login-config>` | No `web.xml`, no Realm configuration anywhere; all authentication is the custom `JwtAuthFilter` (`OncePerRequestFilter`), entirely outside Tomcat's container-managed security | **No** |
+| **CVE-2026-43515** (CRITICAL — improper authorization via conflicting method/extension `<security-constraint>`s) | Declarative `<security-constraint>` entries in `web.xml` | GameFlix has no `web.xml` at all — it's a pure Spring Boot app; the one protected endpoint (`/api/me`) is gated by a `FilterRegistrationBean`-scoped servlet filter, not a declarative security constraint | **No** |
+| **CVE-2026-54512 / CVE-2026-54513** (HIGH — Jackson arbitrary code execution via polymorphic type handling) | `ObjectMapper.activateDefaultTyping(...)` or an equivalent explicit polymorphic-deserialization config | No `ObjectMapper` bean, no `@JsonTypeInfo`, no `PolymorphicTypeValidator`, and no Jackson settings in `application.properties` anywhere in the codebase — the app relies entirely on Spring Boot's default (safe) Jackson autoconfiguration | **No** |
+
+**Conclusion:** none of the remaining CRITICAL or HIGH findings are exploitable
+through any code path GameFlix currently exercises. This is **not** the same
+finding as "no critical vulnerabilities" — the vulnerable code ships inside
+the jar regardless of whether it's reachable today, and a future change
+(enabling HTTP/2 for performance, adding a `web.xml`, someone reintroducing
+Tomcat-managed auth, or a future feature that turns on Jackson default
+typing) could make any of these live again without anyone realizing an
+already-known CVE had reopened. That's precisely the gap a recurring
+vulnerability-handling process — not a single one-time audit — is meant to
+close; see Section 6.
+
+---
+
+## 5. Simulated CRA incident: `CVE-2026-43512`
 
 To exercise the CRA reporting workflow, treat the most severe unresolved
 finding as if it were discovered actively exploited against a live GameFlix
@@ -136,7 +165,7 @@ patch bump alone.
 
 ---
 
-## 5. Why this belongs in the pipeline, not just this one memo
+## 6. Why this belongs in the pipeline, not just this one memo
 
 A one-time scan only proves the dependency tree was clean on 2026-07-16. New
 CVEs are disclosed against already-shipped code constantly (several findings
