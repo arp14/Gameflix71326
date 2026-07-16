@@ -11,6 +11,30 @@ jobs:
       contents: read
       packages: write
 
+    # Ephemeral MySQL for this job only - GameflixApplicationTests boots a
+    # full Spring context that needs a real database. The runner has no
+    # network path to the real w2-vmistserver.ad.psu.edu (Penn State
+    # internal server), so tests need their own throwaway DB instead.
+    # These credentials only exist for this container's ~1 minute
+    # lifetime and are never reachable outside the runner, so they're not
+    # meaningful secrets - unlike the registry login below, which uses a
+    # real secret (secrets.GITHUB_TOKEN).
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: ci_root_password
+          MYSQL_DATABASE: gameflix
+          MYSQL_USER: gameflix_app
+          MYSQL_PASSWORD: ci_test_password
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h localhost"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -25,6 +49,11 @@ jobs:
       # Fail-fast: if tests fail, the job stops here and the later
       # build/image steps never run.
       - name: Run tests
+        env:
+          DB_URL: jdbc:mysql://localhost:3306/gameflix
+          DB_USERNAME: gameflix_app
+          DB_PASSWORD: ci_test_password
+          JWT_SECRET: ci-test-only-secret-value-32chars-minimum-length
         run: mvn -B test
 
       - name: Build jar
