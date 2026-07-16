@@ -1,0 +1,3126 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "dev"
+  },
+  "ReportID": "019f6c70-ddb5-7e17-a036-e118f4a81eb8",
+  "CreatedAt": "2026-07-16T19:39:23.9579258Z",
+  "ArtifactName": "sbom.cdx.json",
+  "ArtifactType": "cyclonedx",
+  "Results": [
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Packages": [
+        {
+          "ID": "ch.qos.logback:logback-classic:1.5.18",
+          "Name": "ch.qos.logback:logback-classic",
+          "Identifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-classic@1.5.18",
+            "UID": "99bcee96d912757d",
+            "BOMRef": "pkg:maven/ch.qos.logback/logback-classic@1.5.18?package-id=19041771e3de655d"
+          },
+          "Version": "1.5.18",
+          "Licenses": [
+            "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+          ]
+        },
+        {
+          "ID": "ch.qos.logback:logback-core:1.5.18",
+          "Name": "ch.qos.logback:logback-core",
+          "Identifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.5.18",
+            "UID": "f0007e5cb9931e74",
+            "BOMRef": "pkg:maven/ch.qos.logback/logback-core@1.5.18?package-id=368c1b6495c0bbf5"
+          },
+          "Version": "1.5.18",
+          "Licenses": [
+            "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.core:jackson-annotations:2.17.3",
+          "Name": "com.fasterxml.jackson.core:jackson-annotations",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
+            "UID": "ff56acf9da6570c0",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3?package-id=bc8eba4e4363691c"
+          },
+          "Version": "2.17.3",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.core:jackson-core:2.17.3",
+          "Name": "com.fasterxml.jackson.core:jackson-core",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
+            "UID": "35b0d94c860dc143",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3?package-id=769aeb793de435b9"
+          },
+          "Version": "2.17.3",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.core:jackson-databind:2.17.3",
+          "Name": "com.fasterxml.jackson.core:jackson-databind",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+            "UID": "8f86d76d4868a7a6",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3?package-id=50b9ac9944cb1df9"
+          },
+          "Version": "2.17.3",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.17.3",
+          "Name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.17.3",
+            "UID": "1edd53d8a129c146",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.17.3?package-id=993f8c34d0f427fe"
+          },
+          "Version": "2.17.3",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.3",
+          "Name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.17.3",
+            "UID": "8d55c1ec193759fe",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.17.3?package-id=5aa8bba33cddfe63"
+          },
+          "Version": "2.17.3",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.module:jackson-module-parameter-names:2.17.3",
+          "Name": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.17.3",
+            "UID": "cf40fe02214b0827",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.17.3?package-id=6070af766727daa9"
+          },
+          "Version": "2.17.3",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml:classmate:1.7.0",
+          "Name": "com.fasterxml:classmate",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml/classmate@1.7.0",
+            "UID": "379009c153a6c54a",
+            "BOMRef": "pkg:maven/com.fasterxml/classmate@1.7.0?package-id=6155f0be5b95043d"
+          },
+          "Version": "1.7.0",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.gameflix:gameflix:0.0.1-SNAPSHOT",
+          "Name": "com.gameflix:gameflix",
+          "Identifier": {
+            "PURL": "pkg:maven/com.gameflix/gameflix@0.0.1-SNAPSHOT",
+            "UID": "19cfb5a17f72bfa3",
+            "BOMRef": "pkg:maven/com.gameflix/gameflix@0.0.1-SNAPSHOT?package-id=d252dea04ead99dd"
+          },
+          "Version": "0.0.1-SNAPSHOT",
+          "DependsOn": [
+            "ch.qos.logback:logback-classic:1.5.18",
+            "ch.qos.logback:logback-core:1.5.18",
+            "com.fasterxml.jackson.core:jackson-annotations:2.17.3",
+            "com.fasterxml.jackson.core:jackson-core:2.17.3",
+            "com.fasterxml.jackson.core:jackson-databind:2.17.3",
+            "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.17.3",
+            "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.3",
+            "com.fasterxml.jackson.module:jackson-module-parameter-names:2.17.3",
+            "com.fasterxml:classmate:1.7.0",
+            "com.mysql:mysql-connector-j:8.3.0",
+            "com.sun.istack:istack-commons-runtime:4.1.2",
+            "com.zaxxer:HikariCP:5.1.0",
+            "io.jsonwebtoken:jjwt-api:0.12.6",
+            "io.jsonwebtoken:jjwt-impl:0.12.6",
+            "io.jsonwebtoken:jjwt-jackson:0.12.6",
+            "io.micrometer:micrometer-commons:1.13.15",
+            "io.micrometer:micrometer-observation:1.13.15",
+            "io.smallrye:jandex:3.1.2",
+            "jakarta.activation:jakarta.activation-api:2.1.3",
+            "jakarta.annotation:jakarta.annotation-api:2.1.1",
+            "jakarta.inject:jakarta.inject-api:2.0.1",
+            "jakarta.persistence:jakarta.persistence-api:3.1.0",
+            "jakarta.transaction:jakarta.transaction-api:2.0.1",
+            "jakarta.xml.bind:jakarta.xml.bind-api:4.0.2",
+            "net.bytebuddy:byte-buddy:1.14.19",
+            "org.antlr:antlr4-runtime:4.13.0",
+            "org.apache.logging.log4j:log4j-api:2.23.1",
+            "org.apache.logging.log4j:log4j-to-slf4j:2.23.1",
+            "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+            "org.apache.tomcat.embed:tomcat-embed-el:10.1.42",
+            "org.apache.tomcat.embed:tomcat-embed-websocket:10.1.42",
+            "org.aspectj.weaver:aspectjweaver:1.9.24",
+            "org.eclipse.angus:angus-activation:2.0.2",
+            "org.glassfish.jaxb:jaxb-core:4.0.5",
+            "org.glassfish.jaxb:jaxb-runtime:4.0.5",
+            "org.glassfish.jaxb:txw2:4.0.5",
+            "org.hibernate:hibernate-commons-annotations:6.0.6.Final",
+            "org.hibernate:hibernate-core:6.5.3.Final",
+            "org.jboss.logging:jboss-logging:3.5.3.Final",
+            "org.slf4j:jul-to-slf4j:2.0.17",
+            "org.slf4j:slf4j-api:2.0.17",
+            "org.springframework.boot:spring-boot-autoconfigure:3.3.13",
+            "org.springframework.boot:spring-boot:3.3.13",
+            "org.springframework.data:spring-data-commons:3.3.13",
+            "org.springframework.data:spring-data-jpa:3.3.13",
+            "org.springframework.security:spring-security-crypto:6.3.10",
+            "org.springframework:spring-aop:6.1.21",
+            "org.springframework:spring-aspects:6.1.21",
+            "org.springframework:spring-beans:6.1.21",
+            "org.springframework:spring-context:6.1.21",
+            "org.springframework:spring-core:6.1.21",
+            "org.springframework:spring-expression:6.1.21",
+            "org.springframework:spring-jcl:6.1.21",
+            "org.springframework:spring-jdbc:6.1.21",
+            "org.springframework:spring-orm:6.1.21",
+            "org.springframework:spring-tx:6.1.21",
+            "org.springframework:spring-web:6.1.21",
+            "org.springframework:spring-webmvc:6.1.21",
+            "org.yaml:snakeyaml:2.2",
+            "spring-boot-jarmode-tools:spring-boot-jarmode-tools:3.3.13"
+          ]
+        },
+        {
+          "ID": "com.mysql:mysql-connector-j:8.3.0",
+          "Name": "com.mysql:mysql-connector-j",
+          "Identifier": {
+            "PURL": "pkg:maven/com.mysql/mysql-connector-j@8.3.0",
+            "UID": "85fa4061b65fc140",
+            "BOMRef": "pkg:maven/com.mysql/mysql-connector-j@8.3.0?package-id=b8b8e30ba6840947"
+          },
+          "Version": "8.3.0",
+          "Licenses": [
+            "BSD-3-Clause",
+            "EPL-1.0",
+            "GPL-2.0-only",
+            "LGPL-2.1-only"
+          ]
+        },
+        {
+          "ID": "com.sun.istack:istack-commons-runtime:4.1.2",
+          "Name": "com.sun.istack:istack-commons-runtime",
+          "Identifier": {
+            "PURL": "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.2",
+            "UID": "e672d74ae569da57",
+            "BOMRef": "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.2?package-id=7d05adea7bf1738e"
+          },
+          "Version": "4.1.2",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "com.zaxxer:HikariCP:5.1.0",
+          "Name": "com.zaxxer:HikariCP",
+          "Identifier": {
+            "PURL": "pkg:maven/com.zaxxer/HikariCP@5.1.0",
+            "UID": "305e74aca96ba45e",
+            "BOMRef": "pkg:maven/com.zaxxer/HikariCP@5.1.0?package-id=1a6119d2d0051eb9"
+          },
+          "Version": "5.1.0",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "io.jsonwebtoken:jjwt-api:0.12.6",
+          "Name": "io.jsonwebtoken:jjwt-api",
+          "Identifier": {
+            "PURL": "pkg:maven/io.jsonwebtoken/jjwt-api@0.12.6",
+            "UID": "d82146dc588e1a25",
+            "BOMRef": "pkg:maven/io.jsonwebtoken/jjwt-api@0.12.6?package-id=4d43d37bc4aab0a4"
+          },
+          "Version": "0.12.6",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "io.jsonwebtoken:jjwt-impl:0.12.6",
+          "Name": "io.jsonwebtoken:jjwt-impl",
+          "Identifier": {
+            "PURL": "pkg:maven/io.jsonwebtoken/jjwt-impl@0.12.6",
+            "UID": "7d86dbefe7ccd54",
+            "BOMRef": "pkg:maven/io.jsonwebtoken/jjwt-impl@0.12.6?package-id=a564edb91d4376e2"
+          },
+          "Version": "0.12.6",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "io.jsonwebtoken:jjwt-jackson:0.12.6",
+          "Name": "io.jsonwebtoken:jjwt-jackson",
+          "Identifier": {
+            "PURL": "pkg:maven/io.jsonwebtoken/jjwt-jackson@0.12.6",
+            "UID": "87b2174e61b79b20",
+            "BOMRef": "pkg:maven/io.jsonwebtoken/jjwt-jackson@0.12.6?package-id=a0d993939f49e6ab"
+          },
+          "Version": "0.12.6",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "io.micrometer:micrometer-commons:1.13.15",
+          "Name": "io.micrometer:micrometer-commons",
+          "Identifier": {
+            "PURL": "pkg:maven/io.micrometer/micrometer-commons@1.13.15",
+            "UID": "1193009d8c4288af",
+            "BOMRef": "pkg:maven/io.micrometer/micrometer-commons@1.13.15?package-id=81806e2391bf467a"
+          },
+          "Version": "1.13.15",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "io.micrometer:micrometer-observation:1.13.15",
+          "Name": "io.micrometer:micrometer-observation",
+          "Identifier": {
+            "PURL": "pkg:maven/io.micrometer/micrometer-observation@1.13.15",
+            "UID": "248ee5840f3aded7",
+            "BOMRef": "pkg:maven/io.micrometer/micrometer-observation@1.13.15?package-id=88635ee862d1c942"
+          },
+          "Version": "1.13.15",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "io.smallrye:jandex:3.1.2",
+          "Name": "io.smallrye:jandex",
+          "Identifier": {
+            "PURL": "pkg:maven/io.smallrye/jandex@3.1.2",
+            "UID": "4c80daa5cf668214",
+            "BOMRef": "pkg:maven/io.smallrye/jandex@3.1.2?package-id=09c131fb9f93f751"
+          },
+          "Version": "3.1.2",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "jakarta.activation:jakarta.activation-api:2.1.3",
+          "Name": "jakarta.activation:jakarta.activation-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.3",
+            "UID": "3edb9e050e5e034d",
+            "BOMRef": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.3?package-id=2f19998337474a51"
+          },
+          "Version": "2.1.3",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "jakarta.annotation:jakarta.annotation-api:2.1.1",
+          "Name": "jakarta.annotation:jakarta.annotation-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1",
+            "UID": "da14eb907d0e2621",
+            "BOMRef": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?package-id=04d4f22802ba38cc"
+          },
+          "Version": "2.1.1",
+          "Licenses": [
+            "http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html"
+          ]
+        },
+        {
+          "ID": "jakarta.inject:jakarta.inject-api:2.0.1",
+          "Name": "jakarta.inject:jakarta.inject-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1",
+            "UID": "3606197c87fa2928",
+            "BOMRef": "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1?package-id=8d133c332bedb65d"
+          },
+          "Version": "2.0.1",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "jakarta.persistence:jakarta.persistence-api:3.1.0",
+          "Name": "jakarta.persistence:jakarta.persistence-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0",
+            "UID": "80492ad2258542fd",
+            "BOMRef": "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0?package-id=7ae8a346f5ac42c6"
+          },
+          "Version": "3.1.0",
+          "Licenses": [
+            "http://www.eclipse.org/legal/epl-2.0, http://www.eclipse.org/org/documents/edl-v10.php"
+          ]
+        },
+        {
+          "ID": "jakarta.transaction:jakarta.transaction-api:2.0.1",
+          "Name": "jakarta.transaction:jakarta.transaction-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1",
+            "UID": "6ed8e54a56b54d65",
+            "BOMRef": "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?package-id=b5290d1912da1ed8"
+          },
+          "Version": "2.0.1",
+          "Licenses": [
+            "http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html"
+          ]
+        },
+        {
+          "ID": "jakarta.xml.bind:jakarta.xml.bind-api:4.0.2",
+          "Name": "jakarta.xml.bind:jakarta.xml.bind-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.2",
+            "UID": "81236306b5f8526c",
+            "BOMRef": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.2?package-id=de99a5512b8744f5"
+          },
+          "Version": "4.0.2",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "net.bytebuddy:byte-buddy:1.14.19",
+          "Name": "net.bytebuddy:byte-buddy",
+          "Identifier": {
+            "PURL": "pkg:maven/net.bytebuddy/byte-buddy@1.14.19",
+            "UID": "e549e18f9ef27480",
+            "BOMRef": "pkg:maven/net.bytebuddy/byte-buddy@1.14.19?package-id=a2069fb2d054d926"
+          },
+          "Version": "1.14.19",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.antlr:antlr4-runtime:4.13.0",
+          "Name": "org.antlr:antlr4-runtime",
+          "Identifier": {
+            "PURL": "pkg:maven/org.antlr/antlr4-runtime@4.13.0",
+            "UID": "4efa01e0468027ed",
+            "BOMRef": "pkg:maven/org.antlr/antlr4-runtime@4.13.0?package-id=e746ceb32daeb8d5"
+          },
+          "Version": "4.13.0",
+          "Licenses": [
+            "https://www.antlr.org/license.html"
+          ]
+        },
+        {
+          "ID": "org.apache.logging.log4j:log4j-api:2.23.1",
+          "Name": "org.apache.logging.log4j:log4j-api",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.logging.log4j/log4j-api@2.23.1",
+            "UID": "88b7dc9e38ec240",
+            "BOMRef": "pkg:maven/org.apache.logging.log4j/log4j-api@2.23.1?package-id=b0ba47109e5277c3"
+          },
+          "Version": "2.23.1",
+          "Licenses": [
+            "\"Apache-2.0\";link=\"https://www.apache.org/licenses/LICENSE-2.0.txt\""
+          ]
+        },
+        {
+          "ID": "org.apache.logging.log4j:log4j-to-slf4j:2.23.1",
+          "Name": "org.apache.logging.log4j:log4j-to-slf4j",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.23.1",
+            "UID": "47532b19f54d8872",
+            "BOMRef": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.23.1?package-id=8fd1d732ffd9b398"
+          },
+          "Version": "2.23.1",
+          "Licenses": [
+            "\"Apache-2.0\";link=\"https://www.apache.org/licenses/LICENSE-2.0.txt\""
+          ]
+        },
+        {
+          "ID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "Name": "org.apache.tomcat.embed:tomcat-embed-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "Version": "10.1.42",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.apache.tomcat.embed:tomcat-embed-el:10.1.42",
+          "Name": "org.apache.tomcat.embed:tomcat-embed-el",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.42",
+            "UID": "e33e747a7309393a",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.42?package-id=3255e2931f2caf3b"
+          },
+          "Version": "10.1.42",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.apache.tomcat.embed:tomcat-embed-websocket:10.1.42",
+          "Name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.42",
+            "UID": "9a2f1f6a8d31535d",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.42?package-id=c30f784ef91ca624"
+          },
+          "Version": "10.1.42",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.aspectj.weaver:aspectjweaver:1.9.24",
+          "Name": "org.aspectj.weaver:aspectjweaver",
+          "Identifier": {
+            "PURL": "pkg:maven/org.aspectj.weaver/aspectjweaver@1.9.24",
+            "UID": "cd961ad78a45afdd",
+            "BOMRef": "pkg:maven/org.aspectj.weaver/aspectjweaver@1.9.24?package-id=dfde267de3dbb7c4"
+          },
+          "Version": "1.9.24",
+          "Licenses": [
+            "sha256:4e2c7d9f5cc62bfe8ca3461be6fd659f744f508af1207bf5d633fd5f4270bb98"
+          ]
+        },
+        {
+          "ID": "org.eclipse.angus:angus-activation:2.0.2",
+          "Name": "org.eclipse.angus:angus-activation",
+          "Identifier": {
+            "PURL": "pkg:maven/org.eclipse.angus/angus-activation@2.0.2",
+            "UID": "db31bdf9179b3c49",
+            "BOMRef": "pkg:maven/org.eclipse.angus/angus-activation@2.0.2?package-id=04bbc716fd1c46ed"
+          },
+          "Version": "2.0.2",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.glassfish.jaxb:jaxb-core:4.0.5",
+          "Name": "org.glassfish.jaxb:jaxb-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.5",
+            "UID": "94711717fac1ebb1",
+            "BOMRef": "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.5?package-id=0534fc4f1a71029c"
+          },
+          "Version": "4.0.5",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.glassfish.jaxb:jaxb-runtime:4.0.5",
+          "Name": "org.glassfish.jaxb:jaxb-runtime",
+          "Identifier": {
+            "PURL": "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.5",
+            "UID": "c6159513c6969f81",
+            "BOMRef": "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.5?package-id=77e9e0bcb12bd4f6"
+          },
+          "Version": "4.0.5",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.glassfish.jaxb:txw2:4.0.5",
+          "Name": "org.glassfish.jaxb:txw2",
+          "Identifier": {
+            "PURL": "pkg:maven/org.glassfish.jaxb/txw2@4.0.5",
+            "UID": "6d3f726436712baa",
+            "BOMRef": "pkg:maven/org.glassfish.jaxb/txw2@4.0.5?package-id=5a1c28b9761dda2a"
+          },
+          "Version": "4.0.5",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.hibernate:hibernate-commons-annotations:6.0.6.Final",
+          "Name": "org.hibernate:hibernate-commons-annotations",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hibernate/hibernate-commons-annotations@6.0.6.Final",
+            "UID": "2b8f941ecfde5675",
+            "BOMRef": "pkg:maven/org.hibernate/hibernate-commons-annotations@6.0.6.Final?package-id=7bccda1380b0496d"
+          },
+          "Version": "6.0.6.Final"
+        },
+        {
+          "ID": "org.hibernate:hibernate-core:6.5.3.Final",
+          "Name": "org.hibernate:hibernate-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hibernate/hibernate-core@6.5.3.Final",
+            "UID": "d6e1673bccb5b030",
+            "BOMRef": "pkg:maven/org.hibernate/hibernate-core@6.5.3.Final?package-id=06aa1d42f19e4c8d"
+          },
+          "Version": "6.5.3.Final"
+        },
+        {
+          "ID": "org.jboss.logging:jboss-logging:3.5.3.Final",
+          "Name": "org.jboss.logging:jboss-logging",
+          "Identifier": {
+            "PURL": "pkg:maven/org.jboss.logging/jboss-logging@3.5.3.Final",
+            "UID": "b290e96926439147",
+            "BOMRef": "pkg:maven/org.jboss.logging/jboss-logging@3.5.3.Final?package-id=f0e5a3712a36e6e4"
+          },
+          "Version": "3.5.3.Final",
+          "Licenses": [
+            "https://repository.jboss.org/licenses/apache-2.0.txt"
+          ]
+        },
+        {
+          "ID": "org.slf4j:jul-to-slf4j:2.0.17",
+          "Name": "org.slf4j:jul-to-slf4j",
+          "Identifier": {
+            "PURL": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17",
+            "UID": "34df706529e119a7",
+            "BOMRef": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17?package-id=95f8b4c18b569a16"
+          },
+          "Version": "2.0.17",
+          "Licenses": [
+            "https://opensource.org/license/mit"
+          ]
+        },
+        {
+          "ID": "org.slf4j:slf4j-api:2.0.17",
+          "Name": "org.slf4j:slf4j-api",
+          "Identifier": {
+            "PURL": "pkg:maven/org.slf4j/slf4j-api@2.0.17",
+            "UID": "44f98a75ed98554e",
+            "BOMRef": "pkg:maven/org.slf4j/slf4j-api@2.0.17?package-id=68e234c549704100"
+          },
+          "Version": "2.0.17",
+          "Licenses": [
+            "https://opensource.org/license/mit"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot:3.3.13",
+          "Name": "org.springframework.boot:spring-boot",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot@3.3.13",
+            "UID": "4325d134ce33570d",
+            "BOMRef": "pkg:maven/org.springframework.boot/spring-boot@3.3.13?package-id=be16db522edaa66c"
+          },
+          "Version": "3.3.13",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-autoconfigure:3.3.13",
+          "Name": "org.springframework.boot:spring-boot-autoconfigure",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.13",
+            "UID": "3fedb48fcb0e33d9",
+            "BOMRef": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.13?package-id=fd1c89ce3ba1dd88"
+          },
+          "Version": "3.3.13",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.springframework.data:spring-data-commons:3.3.13",
+          "Name": "org.springframework.data:spring-data-commons",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.data/spring-data-commons@3.3.13",
+            "UID": "5cced4b04e59053e",
+            "BOMRef": "pkg:maven/org.springframework.data/spring-data-commons@3.3.13?package-id=b096e7f6008c57d1"
+          },
+          "Version": "3.3.13",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.springframework.data:spring-data-jpa:3.3.13",
+          "Name": "org.springframework.data:spring-data-jpa",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.data/spring-data-jpa@3.3.13",
+            "UID": "ae9afd09e3929175",
+            "BOMRef": "pkg:maven/org.springframework.data/spring-data-jpa@3.3.13?package-id=fb441a2693c616be"
+          },
+          "Version": "3.3.13",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.springframework.security:spring-security-crypto:6.3.10",
+          "Name": "org.springframework.security:spring-security-crypto",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.security/spring-security-crypto@6.3.10",
+            "UID": "82e47cfb43aefd9b",
+            "BOMRef": "pkg:maven/org.springframework.security/spring-security-crypto@6.3.10?package-id=61c4bb44259a2916"
+          },
+          "Version": "6.3.10"
+        },
+        {
+          "ID": "org.springframework:spring-aop:6.1.21",
+          "Name": "org.springframework:spring-aop",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-aop@6.1.21",
+            "UID": "e0b461fb487f80b8",
+            "BOMRef": "pkg:maven/org.springframework/spring-aop@6.1.21?package-id=8a0f8e88803ccadf"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-aspects:6.1.21",
+          "Name": "org.springframework:spring-aspects",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-aspects@6.1.21",
+            "UID": "32a323b4391b0e95",
+            "BOMRef": "pkg:maven/org.springframework/spring-aspects@6.1.21?package-id=a2ae81630c8b7634"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-beans:6.1.21",
+          "Name": "org.springframework:spring-beans",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-beans@6.1.21",
+            "UID": "7696b13b7c9b090d",
+            "BOMRef": "pkg:maven/org.springframework/spring-beans@6.1.21?package-id=fbd8b42c96c22f00"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-context:6.1.21",
+          "Name": "org.springframework:spring-context",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-context@6.1.21",
+            "UID": "29c5e233f4f5ec5",
+            "BOMRef": "pkg:maven/org.springframework/spring-context@6.1.21?package-id=6c8e27c278ce995d"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-core:6.1.21",
+          "Name": "org.springframework:spring-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-core@6.1.21",
+            "UID": "88eda8c9c1b8b23a",
+            "BOMRef": "pkg:maven/org.springframework/spring-core@6.1.21?package-id=7316503115d317cc"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-expression:6.1.21",
+          "Name": "org.springframework:spring-expression",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-expression@6.1.21",
+            "UID": "4d74f4680091a853",
+            "BOMRef": "pkg:maven/org.springframework/spring-expression@6.1.21?package-id=dcbda6beaff26695"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-jcl:6.1.21",
+          "Name": "org.springframework:spring-jcl",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-jcl@6.1.21",
+            "UID": "80642f2057500ec6",
+            "BOMRef": "pkg:maven/org.springframework/spring-jcl@6.1.21?package-id=8bb1fcfa5f93f7aa"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-jdbc:6.1.21",
+          "Name": "org.springframework:spring-jdbc",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-jdbc@6.1.21",
+            "UID": "9e6bc7147b12fcfd",
+            "BOMRef": "pkg:maven/org.springframework/spring-jdbc@6.1.21?package-id=102b8d7362dbc91c"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-orm:6.1.21",
+          "Name": "org.springframework:spring-orm",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-orm@6.1.21",
+            "UID": "9a18768a325b27a8",
+            "BOMRef": "pkg:maven/org.springframework/spring-orm@6.1.21?package-id=79082e7f73c4f242"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-tx:6.1.21",
+          "Name": "org.springframework:spring-tx",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-tx@6.1.21",
+            "UID": "d3b011844230fd6c",
+            "BOMRef": "pkg:maven/org.springframework/spring-tx@6.1.21?package-id=bc596062578446f3"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-web:6.1.21",
+          "Name": "org.springframework:spring-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@6.1.21",
+            "UID": "64425ea8c31226fd",
+            "BOMRef": "pkg:maven/org.springframework/spring-web@6.1.21?package-id=17306d6972e8603e"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-webmvc:6.1.21",
+          "Name": "org.springframework:spring-webmvc",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@6.1.21",
+            "UID": "c8098dcd0245a6eb",
+            "BOMRef": "pkg:maven/org.springframework/spring-webmvc@6.1.21?package-id=de578ac9bcb8ef53"
+          },
+          "Version": "6.1.21",
+          "Licenses": [
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.yaml:snakeyaml:2.2",
+          "Name": "org.yaml:snakeyaml",
+          "Identifier": {
+            "PURL": "pkg:maven/org.yaml/snakeyaml@2.2",
+            "UID": "3fc8ee17b29605c1",
+            "BOMRef": "pkg:maven/org.yaml/snakeyaml@2.2?package-id=160bb68800da1012"
+          },
+          "Version": "2.2",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "spring-boot-jarmode-tools:spring-boot-jarmode-tools:3.3.13",
+          "Name": "spring-boot-jarmode-tools:spring-boot-jarmode-tools",
+          "Identifier": {
+            "PURL": "pkg:maven/spring-boot-jarmode-tools/spring-boot-jarmode-tools@3.3.13",
+            "UID": "ecb82d0b8c880f98",
+            "BOMRef": "pkg:maven/spring-boot-jarmode-tools/spring-boot-jarmode-tools@3.3.13?package-id=c0a9a3f0ec8e8b15"
+          },
+          "Version": "3.3.13",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2025-11226",
+          "VendorIDs": [
+            "GHSA-25qh-j22f-pwp8"
+          ],
+          "PkgID": "ch.qos.logback:logback-core:1.5.18",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.5.18",
+            "UID": "f0007e5cb9931e74",
+            "BOMRef": "pkg:maven/ch.qos.logback/logback-core@1.5.18?package-id=368c1b6495c0bbf5"
+          },
+          "InstalledVersion": "1.5.18",
+          "FixedVersion": "1.5.19, 1.3.16",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-11226",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:b904fa352bb069f921d68b3e5d5fed24061ef8bd792a5824648f20d58abd6917",
+          "Title": "ch.qos.logback/logback-core: Conditional abitrary code execution in logback-core",
+          "Description": "ACE vulnerability in conditional configuration file processing  by QOS.CH logback-core up to and including version 1.5.18 in Java applications, allows an attacker to execute arbitrary code by compromising an existing logback configuration file or by injecting an environment variable before program execution.\n\n\n\nA successful attack requires the presence of Janino library and Spring Framework to be present on the user's class path. In addition, the attacker must  have write access to a \nconfiguration file. Alternatively, the attacker could inject a malicious \nenvironment variable pointing to a malicious configuration file. In both \ncases, the attack requires existing privilege.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:H/UI:P/VC:H/VI:L/VA:L/SC:H/SI:L/SA:L",
+              "V40Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:L/A:L",
+              "V3Score": 6.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-11226",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/61f6a2544f36b3016e0efd434ee21f19269f1df7",
+            "https://github.com/qos-ch/logback/issues/974",
+            "https://github.com/qos-ch/logback/releases/tag/v_1.5.19",
+            "https://logback.qos.ch/news.html#1.3.16",
+            "https://logback.qos.ch/news.html#1.5.19",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-11226",
+            "https://www.cve.org/CVERecord?id=CVE-2025-11226"
+          ],
+          "PublishedDate": "2025-10-01T08:15:31.25Z",
+          "LastModifiedDate": "2026-06-25T17:16:37.143Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-10532",
+          "VendorIDs": [
+            "GHSA-jhq6-gfmj-v8fx"
+          ],
+          "PkgID": "ch.qos.logback:logback-core:1.5.18",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.5.18",
+            "UID": "f0007e5cb9931e74",
+            "BOMRef": "pkg:maven/ch.qos.logback/logback-core@1.5.18?package-id=368c1b6495c0bbf5"
+          },
+          "InstalledVersion": "1.5.18",
+          "FixedVersion": "1.5.34",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-10532",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:a77ad404781fb1ec3b61a4a5004cd6341fb74f4332411ef743101a5650c8683d",
+          "Title": "Deserialization of untrusted data vulnerability in QOS.CH Sarl logback ...",
+          "Description": "Deserialization of untrusted data vulnerability in QOS.CH Sarl logback logback-core (HardenedObjectInputStream (logback-core) modules) allows Object Injection, albeit heavily restricted.\n\nMore precisely, an attacker able to influence serialized data sent to \nSimpleSocketServer or SimpleSSLSocketServer can instantiate Proxy objects.\n\n\nAlthough deserialization is heavily restricted by HardenedObjectInputStream and no \npractical way to achieve remote code execution or significant privilege \nescalation has been identified, this issue constitutes a bypass of the \nintended security restrictions.\n\n\n\nThis issue affects logback: through 1.5.33 inclusive.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:P/RE:M/U:Green",
+              "V40Score": 2.9
+            }
+          },
+          "References": [
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/releases/tag/v_1.5.34",
+            "https://logback.qos.ch/news.html#1.5.34",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-10532"
+          ],
+          "PublishedDate": "2026-06-01T13:16:30.34Z",
+          "LastModifiedDate": "2026-06-17T10:12:22.89Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-1225",
+          "VendorIDs": [
+            "GHSA-qqpg-mvqg-649v"
+          ],
+          "PkgID": "ch.qos.logback:logback-core:1.5.18",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.5.18",
+            "UID": "f0007e5cb9931e74",
+            "BOMRef": "pkg:maven/ch.qos.logback/logback-core@1.5.18?package-id=368c1b6495c0bbf5"
+          },
+          "InstalledVersion": "1.5.18",
+          "FixedVersion": "1.5.25",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-1225",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:2e0175fe5423729db35e2f8545206ba3bb7008ae10766f8b2c975dd7774e23e7",
+          "Title": "ch.qos.logback/logback-core: Malicious logback.xml configuration file allows instantiation of arbitrary classes",
+          "Description": "ACE vulnerability in configuration file processing  by QOS.CH logback-core up to and including version 1.5.24 in Java applications, allows an attacker to instantiate classes already present on the class path by compromising an existing logback configuration file.\n\n\n\n\nThe instantiation of a potentially malicious Java class requires that said class is present on the user's class-path. In addition, the attacker must  have write access to a \nconfiguration file. However, after successful instantiation, the instance is very likely to be discarded with no further ado.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:H/UI:N/VC:L/VI:L/VA:L/SC:L/SI:L/SA:L",
+              "V40Score": 1.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:L",
+              "V3Score": 5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-1225",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/1f97ae1844b1be8486e4e9cade98d7123d3eded5",
+            "https://github.com/qos-ch/logback/issues/997",
+            "https://logback.qos.ch/news.html#1.5.25",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-1225",
+            "https://www.cve.org/CVERecord?id=CVE-2026-1225"
+          ],
+          "PublishedDate": "2026-01-22T10:16:07.693Z",
+          "LastModifiedDate": "2026-06-17T10:15:21.373Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-9828",
+          "VendorIDs": [
+            "GHSA-p47f-322f-whfh"
+          ],
+          "PkgID": "ch.qos.logback:logback-core:1.5.18",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.5.18",
+            "UID": "f0007e5cb9931e74",
+            "BOMRef": "pkg:maven/ch.qos.logback/logback-core@1.5.18?package-id=368c1b6495c0bbf5"
+          },
+          "InstalledVersion": "1.5.18",
+          "FixedVersion": "1.5.33",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-9828",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:2808ff3793770476370432873d3d2b6c8928575a7f063c43025d0b5b4394ea3b",
+          "Title": "Deserialization of untrusted data vulnerability in QOS.CH Sarl logback ...",
+          "Description": "Deserialization of untrusted data vulnerability in QOS.CH Sarl logback logback-core (HardenedObjectInputStream (logback-core) modules) allows Object Injection albeit heavily restricted.\n\nMore precisely, an attacker able to influence serialized data sent to \nSimpleSocketServer or SimpleSSLSocketServer can instantiate objects from\n classes in the java.lang and java.util packages that are not explicitly\n blocked.\n\nAlthough deserialization is heavily restricted by HardenedObjectInputStream and no \npractical way to achieve remote code execution or significant privilege \nescalation has been identified, this issue constitutes a bypass of the \nintended security restrictions.\n\n\n\nThis issue affects logback: through 1.5.32 inclusive.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:P/RE:L/U:Green",
+              "V40Score": 1.2
+            }
+          },
+          "References": [
+            "https://github.com/qos-ch/logback",
+            "https://logback.qos.ch/news.html#1.5.33",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-9828"
+          ],
+          "PublishedDate": "2026-05-28T14:16:27.43Z",
+          "LastModifiedDate": "2026-06-17T11:05:40.533Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-72hv-8253-57qq",
+          "PkgID": "com.fasterxml.jackson.core:jackson-core:2.17.3",
+          "PkgName": "com.fasterxml.jackson.core:jackson-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
+            "UID": "35b0d94c860dc143",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3?package-id=769aeb793de435b9"
+          },
+          "InstalledVersion": "2.17.3",
+          "FixedVersion": "2.21.1, 2.18.6",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-72hv-8253-57qq",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:0ef40ee1cb18154f069b9ccb71513c21154c5d8d4b0f3f66bc92e4ea732b22e7",
+          "Title": "jackson-core: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition",
+          "Description": "### Summary\nThe non-blocking (async) JSON parser in `jackson-core` bypasses the `maxNumberLength` constraint (default: 1000 characters) defined in `StreamReadConstraints`. This allows an attacker to send JSON with arbitrarily long numbers through the async parser API, leading to excessive memory allocation and potential CPU exhaustion, resulting in a Denial of Service (DoS).\n\nThe standard synchronous parser correctly enforces this limit, but the async parser fails to do so, creating an inconsistent enforcement policy.\n\n### Details\nThe root cause is that the async parsing path in `NonBlockingUtf8JsonParserBase` (and related classes) does not call the methods responsible for number length validation.\n\n- The number parsing methods (e.g., `_finishNumberIntegralPart`) accumulate digits into the `TextBuffer` without any length checks.\n- After parsing, they call `_valueComplete()`, which finalizes the token but does **not** call `resetInt()` or `resetFloat()`.\n- The `resetInt()`/`resetFloat()` methods in `ParserBase` are where the `validateIntegerLength()` and `validateFPLength()` checks are performed.\n- Because this validation step is skipped, the `maxNumberLength` constraint is never enforced in the async code path.\n\n### PoC\nThe following JUnit 5 test demonstrates the vulnerability. It shows that the async parser accepts a 5,000-digit number, whereas the limit should be 1,000.\n\n```java\npackage tools.jackson.core.unittest.dos;\n\nimport java.nio.charset.StandardCharsets;\n\nimport org.junit.jupiter.api.Test;\n\nimport tools.jackson.core.*;\nimport tools.jackson.core.exc.StreamConstraintsException;\nimport tools.jackson.core.json.JsonFactory;\nimport tools.jackson.core.json.async.NonBlockingByteArrayJsonParser;\n\nimport static org.junit.jupiter.api.Assertions.*;\n\n/**\n * POC: Number Length Constraint Bypass in Non-Blocking (Async) JSON Parsers\n *\n * Authors: sprabhav7, rohan-repos\n * \n * maxNumberLength default = 1000 characters (digits).\n * A number with more than 1000 digits should be rejected by any parser.\n *\n * BUG: The async parser never calls resetInt()/resetFloat() which is where\n * validateIntegerLength()/validateFPLength() lives. Instead it calls\n * _valueComplete() which skips all number length validation.\n *\n * CWE-770: Allocation of Resources Without Limits or Throttling\n */\nclass AsyncParserNumberLengthBypassTest {\n\n    private static final int MAX_NUMBER_LENGTH = 1000;\n    private static final int TEST_NUMBER_LENGTH = 5000;\n\n    private final JsonFactory factory = new JsonFactory();\n\n    // CONTROL: Sync parser correctly rejects a number exceeding maxNumberLength\n    @Test\n    void syncParserRejectsLongNumber() throws Exception {\n        byte[] payload = buildPayloadWithLongInteger(TEST_NUMBER_LENGTH);\n\t\t\n\t\t// Output to console\n        System.out.println(\"[SYNC] Parsing \" + TEST_NUMBER_LENGTH + \"-digit number (limit: \" + MAX_NUMBER_LENGTH + \")\");\n        try {\n            try (JsonParser p = factory.createParser(ObjectReadContext.empty(), payload)) {\n                while (p.nextToken() != null) {\n                    if (p.currentToken() == JsonToken.VALUE_NUMBER_INT) {\n                        System.out.println(\"[SYNC] Accepted number with \" + p.getText().length() + \" digits — UNEXPECTED\");\n                    }\n                }\n            }\n            fail(\"Sync parser must reject a \" + TEST_NUMBER_LENGTH + \"-digit number\");\n        } catch (StreamConstraintsException e) {\n            System.out.println(\"[SYNC] Rejected with StreamConstraintsException: \" + e.getMessage());\n        }\n    }\n\n    // VULNERABILITY: Async parser accepts the SAME number that sync rejects\n    @Test\n    void asyncParserAcceptsLongNumber() throws Exception {\n        byte[] payload = buildPayloadWithLongInteger(TEST_NUMBER_LENGTH);\n\n        NonBlockingByteArrayJsonParser p =\n            (NonBlockingByteArrayJsonParser) factory.createNonBlockingByteArrayParser(ObjectReadContext.empty());\n        p.feedInput(payload, 0, payload.length);\n        p.endOfInput();\n\n        boolean foundNumber = false;\n        try {\n            while (p.nextToken() != null) {\n                if (p.currentToken() == JsonToken.VALUE_NUMBER_INT) {\n                    foundNumber = true;\n                    String numberText = p.getText();\n                    assertEquals(TEST_NUMBER_LENGTH, numberText.length(),\n                        \"Async parser silently accepted all \" + TEST_NUMBER_LENGTH + \" digits\");\n                }\n            }\n            // Output to console\n            System.out.println(\"[ASYNC INT] Accepted number with \" + TEST_NUMBER_LENGTH + \" digits — BUG CONFIRMED\");\n            assertTrue(foundNumber, \"Parser should have produced a VALUE_NUMBER_INT token\");\n        } catch (StreamConstraintsException e) {\n            fail(\"Bug is fixed — async parser now correctly rejects long numbers: \" + e.getMessage());\n        }\n        p.close();\n    }\n\n    private byte[] buildPayloadWithLongInteger(int numDigits) {\n        StringBuilder sb = new StringBuilder(numDigits + 10);\n        sb.append(\"{\\\"v\\\":\");\n        for (int i = 0; i \u003c numDigits; i++) {\n            sb.append((char) ('1' + (i % 9)));\n        }\n        sb.append('}');\n        return sb.toString().getBytes(StandardCharsets.UTF_8);\n    }\n}\n\n```\n\n\n### Impact\nA malicious actor can send a JSON document with an arbitrarily long number to an application using the async parser (e.g., in a Spring WebFlux or other reactive application). This can cause:\n1.  **Memory Exhaustion:** Unbounded allocation of memory in the `TextBuffer` to store the number's digits, leading to an `OutOfMemoryError`.\n2.  **CPU Exhaustion:** If the application subsequently calls `getBigIntegerValue()` or `getDecimalValue()`, the JVM can be tied up in O(n^2) `BigInteger` parsing operations, leading to a CPU-based DoS.\n\n### Suggested Remediation\n\nThe async parsing path should be updated to respect the `maxNumberLength` constraint. The simplest fix appears to ensure that `_valueComplete()` or a similar method in the async path calls the appropriate validation methods (`resetInt()` or `resetFloat()`) already present in `ParserBase`, mirroring the behavior of the synchronous parsers.\n\n**NOTE:** This research was performed in collaboration with [rohan-repos](https://github.com/rohan-repos)",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ghsa": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+              "V40Score": 6.9
+            }
+          },
+          "References": [
+            "https://github.com/FasterXML/jackson-core",
+            "https://github.com/FasterXML/jackson-core/commit/b0c428e6f993e1b5ece5c1c3cb2523e887cd52cf",
+            "https://github.com/FasterXML/jackson-core/pull/1555",
+            "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-72hv-8253-57qq"
+          ],
+          "PublishedDate": "2026-02-28T02:01:05Z",
+          "LastModifiedDate": "2026-04-07T16:30:17Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-54512",
+          "VendorIDs": [
+            "GHSA-j3rv-43j4-c7qm"
+          ],
+          "PkgID": "com.fasterxml.jackson.core:jackson-databind:2.17.3",
+          "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+            "UID": "8f86d76d4868a7a6",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3?package-id=50b9ac9944cb1df9"
+          },
+          "InstalledVersion": "2.17.3",
+          "FixedVersion": "2.18.8, 3.1.4, 2.21.4",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-54512",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:6f603769eef28461c4257ef6e8e81907744ad2b1a79495e793d8e8f954e73493",
+          "Title": "jackson-databind: jackson-databind: Arbitrary code execution via PolymorphicTypeValidator bypass",
+          "Description": "jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4, jackson-databind's PolymorphicTypeValidator (PTV) is the primary safety mechanism guarding polymorphic deserialization. When polymorphic typing is enabled and a type identifier contains generic parameters (i.e. the type ID string contains \u003c), DatabindContext._resolveAndValidateGeneric() validates only the raw container class name (the substring before \u003c) against the configured PTV. If the container type is approved, the method parses the full canonical type string via TypeFactory.constructFromCanonical() and returns the fully parameterized type without ever validating the nested type arguments against the PTV. The nested type arguments are then resolved, instantiated, and populated as beans during deserialization. An attacker who controls the type ID can therefore place a denied class as a generic type parameter of an allowed container — for example java.util.ArrayList\u003ccom.evil.Gadget\u003e when only java.util.ArrayList is allow-listed. The container passes the PTV check; com.evil.Gadget is loaded via Class.forName(name, true, loader), instantiated, and its properties are set from attacker-controlled JSON. This completely bypasses an explicitly configured PTV allow-list. This vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-184",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-54512",
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/FasterXML/jackson-databind/commit/434d6c511de7fdd9872f29157aafb6162d12d8d5",
+            "https://github.com/FasterXML/jackson-databind/issues/5988",
+            "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-j3rv-43j4-c7qm",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-54512",
+            "https://www.cve.org/CVERecord?id=CVE-2026-54512"
+          ],
+          "PublishedDate": "2026-06-23T21:17:02.203Z",
+          "LastModifiedDate": "2026-06-27T21:01:36.47Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-54513",
+          "VendorIDs": [
+            "GHSA-rmj7-2vxq-3g9f"
+          ],
+          "PkgID": "com.fasterxml.jackson.core:jackson-databind:2.17.3",
+          "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+            "UID": "8f86d76d4868a7a6",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3?package-id=50b9ac9944cb1df9"
+          },
+          "InstalledVersion": "2.17.3",
+          "FixedVersion": "2.18.8, 2.21.4, 3.1.4",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-54513",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:507367084e5d60bef28badc4d311cfdff19f879f10019ab9b9d22690c5d271ac",
+          "Title": "jackson-databind: Jackson-databind: Security bypass allows arbitrary code execution",
+          "Description": "jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4, BasicPolymorphicTypeValidator.Builder.allowIfSubTypeIsArray() allowlists any array type based only on clazz.isArray(), without validating the array's component (element) type against the configured allowlist. A PTV built with allowIfSubTypeIsArray() plus an explicit concrete-type allowlist therefore still permits EvilType[] even though EvilType is not allowlisted. When Jackson deserializes the elements and no per-element type IDs are present, it instantiates the component type directly with no further PTV check, bypassing the allowlist. This vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-184"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:36839",
+            "https://access.redhat.com/security/cve/CVE-2026-54513",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2492010",
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/FasterXML/jackson-databind/commit/01d1692c8d0ed03e51a0e3c4f8a9e6908e4931e5",
+            "https://github.com/FasterXML/jackson-databind/commit/24529da29fdf46ff94ca38de9ebf31cd188f5e8e",
+            "https://github.com/FasterXML/jackson-databind/issues/5981",
+            "https://github.com/FasterXML/jackson-databind/issues/5983",
+            "https://github.com/FasterXML/jackson-databind/pull/5984",
+            "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-rmj7-2vxq-3g9f",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-54513",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-54513.json",
+            "https://www.cve.org/CVERecord?id=CVE-2026-54513"
+          ],
+          "PublishedDate": "2026-06-23T21:17:02.333Z",
+          "LastModifiedDate": "2026-07-15T01:16:35.73Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-54514",
+          "VendorIDs": [
+            "GHSA-hgj6-7826-r7m5"
+          ],
+          "PkgID": "com.fasterxml.jackson.core:jackson-databind:2.17.3",
+          "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+            "UID": "8f86d76d4868a7a6",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3?package-id=50b9ac9944cb1df9"
+          },
+          "InstalledVersion": "2.17.3",
+          "FixedVersion": "2.18.8, 2.21.4, 3.1.4",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-54514",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:c8bed1015ed0c0a13c7e7bc62ce5c8005c74462a007b7c2ea3c80e675167475e",
+          "Title": "jackson-databind: jackson-databind: Information Disclosure via Eager DNS Resolution",
+          "Description": "jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.0.0 until 2.18.8, 2.21.4, and 3.1.4, JDKFromStringDeserializer constructed InetSocketAddress with new InetSocketAddress(host, port), which performs eager DNS name resolution for hostname inputs at deserialization time. An application that binds untrusted JSON into a type containing an InetSocketAddress field issues an attacker-chosen DNS query during readValue, before any application-level validation or connect logic. The fix uses InetSocketAddress.createUnresolved(host, port), deferring DNS to an explicit connect. This vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-54514",
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/FasterXML/jackson-databind/commit/1f5a1037b1e9e05920e755cb35f198bcd46667e4",
+            "https://github.com/FasterXML/jackson-databind/pull/5951",
+            "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-hgj6-7826-r7m5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-54514",
+            "https://www.cve.org/CVERecord?id=CVE-2026-54514"
+          ],
+          "PublishedDate": "2026-06-23T21:17:02.467Z",
+          "LastModifiedDate": "2026-06-27T20:55:09.61Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-54515",
+          "VendorIDs": [
+            "GHSA-5jmj-h7xm-6q6v"
+          ],
+          "PkgID": "com.fasterxml.jackson.core:jackson-databind:2.17.3",
+          "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+            "UID": "8f86d76d4868a7a6",
+            "BOMRef": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3?package-id=50b9ac9944cb1df9"
+          },
+          "InstalledVersion": "2.17.3",
+          "FixedVersion": "3.1.4, 2.18.9, 2.21.5, 2.22.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-54515",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:372368994c8fa053b42aa8f682e3709e99dfb5f1a20b1dfa40ae05c1e4f9b61b",
+          "Title": "jackson-databind: jackson-databind: Ignored properties can be unexpectedly modified",
+          "Description": "jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in BeanDeserializerBase.createContextual(), per-property @JsonIgnoreProperties exclusions are applied by _handleByNameInclusion(), producing a contextual deserializer whose BeanPropertyMap has the ignored properties removed. The subsequent per-property case-insensitivity block (triggered by @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds from this._beanProperties (the original, unfiltered map) instead of contextual._beanProperties, then overwrites the filtered map — restoring every property _handleByNameInclusion had just removed. The ignored property becomes writable again. This vulnerability is fixed in 2.18.9, 2.21.5, and 3.1.4.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-915"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-54515",
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/FasterXML/jackson-databind/commit/0e1b0b211f7a53baa62ba2f4c9bd006c7bf4d5fa",
+            "https://github.com/FasterXML/jackson-databind/issues/5962",
+            "https://github.com/FasterXML/jackson-databind/issues/5964",
+            "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-5jmj-h7xm-6q6v",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-54515",
+            "https://www.cve.org/CVERecord?id=CVE-2026-54515"
+          ],
+          "PublishedDate": "2026-06-23T21:17:02.597Z",
+          "LastModifiedDate": "2026-06-29T13:38:59.057Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-41293",
+          "VendorIDs": [
+            "GHSA-r29c-68gh-xp6x"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.118, 10.1.55, 11.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41293",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:ad63fc21997669c1928343fbd0c692d9a94fa9d9e2715c433437efbb17c3651f",
+          "Title": "tomcat-coyote: Apache Tomcat: HTTP/2 request headers not validated",
+          "Description": "Improper Input Validation vulnerability in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117, from 10.0.0-M1 through 10.0.27.\nOlder, end of support versions may also be affected.\n\nUsers are recommended to upgrade to version [FIXED_VERSION], which fixes the issue.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/12/13",
+            "https://access.redhat.com/security/cve/CVE-2026-41293",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/19f17a257797e8d139b33ff9c88d362a273be148",
+            "https://github.com/apache/tomcat/commit/1c70480466572c9192ed412ebefcd43fc63137fd",
+            "https://github.com/apache/tomcat/commit/2a2476460e823789f530a22207873ea8cd6eff3b",
+            "https://github.com/apache/tomcat/commit/3915fd27e6810b14ccd21e3d900bd8faef44d3df",
+            "https://github.com/apache/tomcat/commit/57c2b3bfd62792631e1df24cf4237b990a0b36fa",
+            "https://github.com/apache/tomcat/commit/c2925554c677da57390f940d856871e18daaacab",
+            "https://github.com/apache/tomcat/commit/cf9452443bcbf3b1a4b435ef7d624364f1b65ca3",
+            "https://github.com/apache/tomcat/commit/e5cef9618c3f4fd31bd6fb1e83f0f18022280dac",
+            "https://github.com/apache/tomcat/commit/f72a6174ab1f0f5a053435f80448b4f6837fe6d7",
+            "https://lists.apache.org/thread/qwg0q16z7xkb2qrr853wdll5531mvl1r",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41293",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://ubuntu.com/security/notices/USN-8417-1",
+            "https://ubuntu.com/security/notices/USN-8450-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-41293"
+          ],
+          "PublishedDate": "2026-05-12T16:16:17.553Z",
+          "LastModifiedDate": "2026-06-17T10:46:27.217Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-43512",
+          "VendorIDs": [
+            "GHSA-h6fc-48rj-7qqh"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.118, 10.1.55, 11.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-43512",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:1e5909056139c480af95b9268c87e175eb2d61fe7d1fb2629b96cea122b8cad6",
+          "Title": "tomcat-coyote: Apache Tomcat: Authentication bypass via digest authentication",
+          "Description": "DEPRECATED: Authentication Bypass Issues vulnerability in digest authentication in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117, from 8.5.0 through 8.5.100, from before 7.0.0.\nOlder unsupported versions any also be affect\n\nUsers are recommended to upgrade to version 11.0.22, 10.1.55 or 9.0.118 which fix the issue.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-592"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/12/8",
+            "https://access.redhat.com/security/cve/CVE-2026-43512",
+            "https://github.com/apache/tomcat/commit/3d4d3fae07a6cd9c2eb193c5491001740ec64448",
+            "https://github.com/apache/tomcat/commit/6565a6cb6499e56fe2f34457cec99f9d1c4f39e9",
+            "https://github.com/apache/tomcat/commit/a99c355e8199adbfd67c9a1fffbd85b810b196cd",
+            "https://lists.apache.org/thread/7x09x7o12solvclslw3sz0288xc8wx73",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-43512",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://ubuntu.com/security/notices/USN-8383-1",
+            "https://ubuntu.com/security/notices/USN-8417-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-43512"
+          ],
+          "PublishedDate": "2026-05-12T16:16:17.99Z",
+          "LastModifiedDate": "2026-06-17T10:49:50.59Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-43515",
+          "VendorIDs": [
+            "GHSA-5m62-pw8w-7w9f"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.118, 10.1.55, 11.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-43515",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:80f713371e5cfefb1b5497c9066fd9bd1830a617f2967dd129563633f84e13c9",
+          "Title": "tomcat-coyote: tomcat: Improper Authorization allows security bypass",
+          "Description": "Improper Authorization vulnerability when multiple method constraints define an HTTP method for the same extension in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109.\n\nUsers are recommended to upgrade to version 11.0.22, 10.1.55 or 9.0.118 which fix the issue.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-285"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 5.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/12/11",
+            "https://access.redhat.com/security/cve/CVE-2026-43515",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/276087d9c7abbcecc6c4fb4e4b08cf64780c6e36",
+            "https://github.com/apache/tomcat/commit/c621317382682206fb58ab92ebd3e1b6fdd10ce9",
+            "https://github.com/apache/tomcat/commit/db919ff9912b4d61d1b702a1342b8bde39270031",
+            "https://lists.apache.org/thread/746nxfxod0wsocxtmv8pb8nkgmwpc6bb",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-43515",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://ubuntu.com/security/notices/USN-8383-1",
+            "https://ubuntu.com/security/notices/USN-8417-1",
+            "https://ubuntu.com/security/notices/USN-8450-1",
+            "https://ubuntu.com/security/notices/USN-8551-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-43515"
+          ],
+          "PublishedDate": "2026-05-12T16:16:18.553Z",
+          "LastModifiedDate": "2026-06-17T10:49:51.027Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-48989",
+          "VendorIDs": [
+            "GHSA-gqp3-2cvr-x8m3"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "11.0.10, 10.1.44, 9.0.108",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-48989",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:25e4d216568d2565ea617f91d8eadd89d136cbdf5ee3e48c206d4c794f2ea2dd",
+          "Title": "tomcat: http/2 \"MadeYouReset\" DoS attack through HTTP/2 control frames",
+          "Description": "Improper Resource Shutdown or Release vulnerability in Apache Tomcat made Tomcat vulnerable to the made you reset attack.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.9, from 10.1.0-M1 through 10.1.43 and from 9.0.0.M1 through 9.0.107. Older, EOL versions may also be affected.\n\nUsers are recommended to upgrade to one of versions 11.0.10, 10.1.44 or 9.0.108 which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-404"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/08/13/2",
+            "https://access.redhat.com/errata/RHSA-2025:14181",
+            "https://access.redhat.com/security/cve/CVE-2025-48989",
+            "https://bugzilla.redhat.com/2373015",
+            "https://bugzilla.redhat.com/2373018",
+            "https://bugzilla.redhat.com/2373020",
+            "https://bugzilla.redhat.com/2373309",
+            "https://bugzilla.redhat.com/2379374",
+            "https://bugzilla.redhat.com/2379382",
+            "https://bugzilla.redhat.com/2379386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373015",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373018",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373020",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373309",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2379374",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2379386",
+            "https://cert-portal.siemens.com/productcert/html/ssa-032379.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48976",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48988",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48989",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-49125",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52520",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-53506",
+            "https://errata.almalinux.org/9/ALSA-2025-14181.html",
+            "https://errata.rockylinux.org/RLSA-2025:14179",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/73c04a10395774bda71a0b37802cf983662ce255",
+            "https://github.com/apache/tomcat/commit/73c04a10395774bda71a0b37802cf983662ce255%20%2810.1.44%29",
+            "https://github.com/apache/tomcat/commit/f362c8eb3b8ec5b7f312f7f5610731c0fb299a06",
+            "https://github.com/apache/tomcat/commit/f362c8eb3b8ec5b7f312f7f5610731c0fb299a06%20%2811.0.10%29",
+            "https://github.com/apache/tomcat/commit/f36b8a4eea4ce8a0bc035079e1d259d29f5eb7bf",
+            "https://github.com/apache/tomcat/commit/f36b8a4eea4ce8a0bc035079e1d259d29f5eb7bf%20%289.0.108%29",
+            "https://kb.cert.org/vuls/id/767506",
+            "https://linux.oracle.com/cve/CVE-2025-48989.html",
+            "https://linux.oracle.com/errata/ELSA-2025-14181.html",
+            "https://lists.apache.org/thread/9ydfg0xr0tchmglcprhxgwhj0hfwxlyf",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-48989",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.44",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://www.cve.org/CVERecord?id=CVE-2025-48989",
+            "https://www.kb.cert.org/vuls/id/767506"
+          ],
+          "PublishedDate": "2025-08-13T13:15:34.153Z",
+          "LastModifiedDate": "2026-06-17T09:30:37.53Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-52520",
+          "VendorIDs": [
+            "GHSA-wr62-c79q-cv37"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "11.0.9, 10.1.43, 9.0.107",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-52520",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:93a71b7819cda12663b9b02cac2679c3213f56ed5fbb51dd30d6b8fe4a742bea",
+          "Title": "tomcat: Apache Tomcat denial of service",
+          "Description": "For some unlikely configurations of multipart upload, an Integer Overflow vulnerability in Apache Tomcat could lead to a DoS via bypassing of size limits.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.8, from 10.1.0-M1 through 10.1.42, from 9.0.0.M1 through 9.0.106.\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 through 8.5.100. Other, older, EOL versions \nmay also be affected.\n\n\nUsers are recommended to upgrade to version 11.0.9, 10.1.43 or 9.0.107, which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 1,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/07/10/12",
+            "https://access.redhat.com/errata/RHSA-2025:14181",
+            "https://access.redhat.com/security/cve/CVE-2025-52520",
+            "https://bugzilla.redhat.com/2373015",
+            "https://bugzilla.redhat.com/2373018",
+            "https://bugzilla.redhat.com/2373020",
+            "https://bugzilla.redhat.com/2373309",
+            "https://bugzilla.redhat.com/2379374",
+            "https://bugzilla.redhat.com/2379382",
+            "https://bugzilla.redhat.com/2379386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373015",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373018",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373020",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373309",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2379374",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2379386",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48976",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48988",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48989",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-49125",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52520",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-53506",
+            "https://errata.almalinux.org/9/ALSA-2025-14181.html",
+            "https://errata.rockylinux.org/RLSA-2025:14179",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/927d66fbc294cb65242102b817a45fd80834e040",
+            "https://github.com/apache/tomcat/commit/927d66fbc294cb65242102b817a45fd80834e040%20%289.0.107%29",
+            "https://github.com/apache/tomcat/commit/a51e4bedccfafd35b7cdd0ee3e22267dee9f90db",
+            "https://github.com/apache/tomcat/commit/a51e4bedccfafd35b7cdd0ee3e22267dee9f90db%20%2811.0.9%29",
+            "https://github.com/apache/tomcat/commit/fc42bbccb9041fafd194fbfdf3eab1d44cb5c45c",
+            "https://github.com/apache/tomcat/commit/fc42bbccb9041fafd194fbfdf3eab1d44cb5c45c%20%2810.1.43%29",
+            "https://linux.oracle.com/cve/CVE-2025-52520.html",
+            "https://linux.oracle.com/errata/ELSA-2025-14181.html",
+            "https://lists.apache.org/thread/trqq01bbxw6c92zx69kx2mw2qgmfy0o5",
+            "https://lists.debian.org/debian-lts-announce/2025/07/msg00009.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-52520",
+            "https://www.cve.org/CVERecord?id=CVE-2025-52520"
+          ],
+          "PublishedDate": "2025-07-10T19:15:25.57Z",
+          "LastModifiedDate": "2026-06-17T09:36:37.37Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-53506",
+          "VendorIDs": [
+            "GHSA-25xr-qj8w-c4vf"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.107, 10.1.43, 11.0.9",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-53506",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:5e7d51b308e4b8311a062c94d1123b7061364986f468ebc67bfea24b30c89808",
+          "Title": "tomcat: Apache Tomcat denial of service",
+          "Description": "Uncontrolled Resource Consumption vulnerability in Apache Tomcat if an HTTP/2 client did not acknowledge the initial settings frame that reduces the maximum permitted concurrent streams.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.8, from 10.1.0-M1 through 10.1.42, from 9.0.0.M1 through 9.0.106.\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 through 8.5.100. Other EOL versions may also be affected.\n\n\nUsers are recommended to upgrade to version 11.0.9, 10.1.43 or 9.0.107, which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/07/10/13",
+            "https://access.redhat.com/errata/RHSA-2025:14181",
+            "https://access.redhat.com/security/cve/CVE-2025-53506",
+            "https://bugzilla.redhat.com/2373015",
+            "https://bugzilla.redhat.com/2373018",
+            "https://bugzilla.redhat.com/2373020",
+            "https://bugzilla.redhat.com/2373309",
+            "https://bugzilla.redhat.com/2379374",
+            "https://bugzilla.redhat.com/2379382",
+            "https://bugzilla.redhat.com/2379386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373015",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373018",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373020",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373309",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2379374",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2379386",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48976",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48988",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48989",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-49125",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52520",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-53506",
+            "https://errata.almalinux.org/9/ALSA-2025-14181.html",
+            "https://errata.rockylinux.org/RLSA-2025:14179",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/2aa6261276ebe50b99276953591e3a2be7898bdb",
+            "https://github.com/apache/tomcat/commit/2aa6261276ebe50b99276953591e3a2be7898bdb%20%2810.1.43%29",
+            "https://github.com/apache/tomcat/commit/434772930f362145516dd60681134e7f0cf8115b",
+            "https://github.com/apache/tomcat/commit/434772930f362145516dd60681134e7f0cf8115b%20%289.0.107%29",
+            "https://github.com/apache/tomcat/commit/be8f330f83ceddaf3baeed57522e571572b6b99b",
+            "https://github.com/apache/tomcat/commit/be8f330f83ceddaf3baeed57522e571572b6b99b%20%2811.0.9%29",
+            "https://linux.oracle.com/cve/CVE-2025-53506.html",
+            "https://linux.oracle.com/errata/ELSA-2025-14181.html",
+            "https://lists.apache.org/thread/p09775q0rd185m6zz98krg0fp45j8kr0",
+            "https://lists.debian.org/debian-lts-announce/2025/07/msg00009.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-53506",
+            "https://www.cve.org/CVERecord?id=CVE-2025-53506"
+          ],
+          "PublishedDate": "2025-07-10T20:15:26.97Z",
+          "LastModifiedDate": "2026-06-17T09:38:20.783Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-55752",
+          "VendorIDs": [
+            "GHSA-wmwf-9ccg-fff5"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "11.0.11, 10.1.45, 9.0.109",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-55752",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:59582241c02c789fc15bbac38c9ad0833dc66adea7319bcf6692e4ccdbd49e2a",
+          "Title": "tomcat: org.apache.tomcat/tomcat-catalina: Apache Tomcat: Directory traversal via rewrite with possible RCE",
+          "Description": "Relative Path Traversal vulnerability in Apache Tomcat.\n\nThe fix for bug 60013 introduced a regression where the       rewritten URL was normalized before it was decoded. This introduced the       possibility that, for rewrite rules that rewrite query parameters to the       URL, an attacker could manipulate the request URI to bypass security       constraints including the protection for /WEB-INF/ and /META-INF/. If PUT requests were also enabled then malicious files could be uploaded leading to remote code execution. PUT requests are normally limited to trusted users and it is considered unlikely that PUT requests would be enabled in conjunction with a rewrite that manipulated the URI.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.10, from 10.1.0-M1 through 10.1.44, from 9.0.0.M11 through 9.0.108.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.6 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.11 or later, 10.1.45 or later or 9.0.109 or later, which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-23"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+              "V3Score": 7.5,
+              "V40Score": 7.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/10/27/4",
+            "https://access.redhat.com/errata/RHSA-2025:23049",
+            "https://access.redhat.com/security/cve/CVE-2025-55752",
+            "https://bugzilla.redhat.com/2362782",
+            "https://bugzilla.redhat.com/2406591",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2362782",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2406591",
+            "https://cert-portal.siemens.com/productcert/html/ssa-032379.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-31651",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-55752",
+            "https://errata.almalinux.org/9/ALSA-2025-23049.html",
+            "https://errata.rockylinux.org/RLSA-2025:23052",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/130d36d8492ef9e4eb22952c17c92423cb35fd06",
+            "https://github.com/apache/tomcat/commit/130d36d8492ef9e4eb22952c17c92423cb35fd06%20%2810.1.45%29",
+            "https://github.com/apache/tomcat/commit/b5042622b8b78340ae65403c55dcb9c7416924df",
+            "https://github.com/apache/tomcat/commit/b5042622b8b78340ae65403c55dcb9c7416924df%20%289.0.109%29",
+            "https://github.com/apache/tomcat/commit/fec06c610ed7466b401e29cc567a58aee5ed826a",
+            "https://github.com/apache/tomcat/commit/fec06c610ed7466b401e29cc567a58aee5ed826a%20%2811.0.11%29",
+            "https://linux.oracle.com/cve/CVE-2025-55752.html",
+            "https://linux.oracle.com/errata/ELSA-2025-23052.html",
+            "https://lists.apache.org/thread/n05kjcwyj1s45ovs8ll1qrrojhfb1tog",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-55752",
+            "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.45",
+            "https://tomcat.apache.org/security-11.html#Fixed_in_Apache_Tomcat_11.0.11",
+            "https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.109",
+            "https://www.cve.org/CVERecord?id=CVE-2025-55752",
+            "https://www.vicarius.io/vsociety/posts/cve-2025-55752-detect-apache-tomcat-vulnerability",
+            "https://www.vicarius.io/vsociety/posts/cve-2025-55752-mitigate-apache-tomcat-vulnerability"
+          ],
+          "PublishedDate": "2025-10-27T18:15:42.283Z",
+          "LastModifiedDate": "2026-06-17T09:42:10.503Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-24734",
+          "VendorIDs": [
+            "GHSA-mgp5-rv84-w37q"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "11.0.18, 10.1.52, 9.0.115",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24734",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:4dc53020d82b77b5dd5f61b5fab21f0971c33463f3ba73164e0de910c0ec5d02",
+          "Title": "tomcat: Apache Tomcat: Certificate revocation bypass due to improper OCSP response validation",
+          "Description": "Improper Input Validation vulnerability in Apache Tomcat Native, Apache Tomcat.\n\nWhen using an OCSP responder, Tomcat Native (and Tomcat's FFM port of the Tomcat Native code) did not complete verification or freshness checks on the OCSP response which could allow certificate revocation to be bypassed.\n\nThis issue affects Apache Tomcat Native:  from 1.3.0 through 1.3.4, from 2.0.0 through 2.0.11; Apache Tomcat: from 11.0.0-M1 through 11.0.17, from 10.1.0-M7 through 10.1.51, from 9.0.83 through 9.0.114.\n\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: from 1.1.23 through 1.1.34, from 1.2.0 through 1.2.39. Older EOL versions are not affected.\n\nApache Tomcat Native users are recommended to upgrade to versions 1.3.5 or later or 2.0.12 or later, which fix the issue.\n\nApache Tomcat users are recommended to upgrade to versions 11.0.18 or later, 10.1.52 or later or 9.0.115 or later which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:19054",
+            "https://access.redhat.com/errata/RHSA-2026:26323",
+            "https://access.redhat.com/errata/RHSA-2026:36790",
+            "https://access.redhat.com/errata/RHSA-2026:5611",
+            "https://access.redhat.com/errata/RHSA-2026:5612",
+            "https://access.redhat.com/errata/RHSA-2026:6569",
+            "https://access.redhat.com/errata/RHSA-2026:8334",
+            "https://access.redhat.com/security/cve/CVE-2026-24734",
+            "https://bugzilla.redhat.com/2440426",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2440426",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24734",
+            "https://errata.almalinux.org/9/ALSA-2026-26323.html",
+            "https://errata.rockylinux.org/RLSA-2026:19054",
+            "https://github.com/apache/tomcat",
+            "https://linux.oracle.com/cve/CVE-2026-24734.html",
+            "https://linux.oracle.com/errata/ELSA-2026-26323.html",
+            "https://lists.apache.org/thread/292dlmx3fz1888v6v16221kpozq56gml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-24734",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-24734.json",
+            "https://www.cve.org/CVERecord?id=CVE-2026-24734"
+          ],
+          "PublishedDate": "2026-02-17T19:21:56.953Z",
+          "LastModifiedDate": "2026-07-15T14:17:21.53Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-24880",
+          "VendorIDs": [
+            "GHSA-563x-q5rq-57qp"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.116, 10.1.52, 11.0.20",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24880",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:6b371ac10283575c7a525abd770dcd70b170681d97201e0634917a39be31a4d9",
+          "Title": "Apache Tomcat: Apache Tomcat: HTTP Request/Response Smuggling via invalid chunk extension",
+          "Description": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') vulnerability in Apache Tomcat via invalid chunk extension.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.18, from 10.1.0-M1 through 10.1.52, from 9.0.0.M1 through 9.0.115, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109.\nOther, unsupported versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.20, 10.1.52 or 9.0.116, which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "bitnami": 3,
+            "ghsa": 3,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/04/09/20",
+            "https://access.redhat.com/security/cve/CVE-2026-24880",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/1b586d6aa8ae65726da5fa8799427b5d4718478a",
+            "https://github.com/apache/tomcat/commit/1e71441a15972f56e661b0b549fb9e5d838b83bb",
+            "https://github.com/apache/tomcat/commit/2cb06c34f661ca42f7570bbcc21e99806184bcc5",
+            "https://github.com/apache/tomcat/commit/6d478dbe18b7c4bb671c30fedf130309b0dab77c",
+            "https://github.com/apache/tomcat/commit/f07df938d00f7419b40fa65aa912966d0efac522",
+            "https://github.com/apache/tomcat/commit/fde1a8235fb73125217bd41e162aa0a113f33552",
+            "https://lists.apache.org/thread/2c682qnlg2tv4o5knlggqbl9yc2gb5sn",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-24880",
+            "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.53",
+            "https://tomcat.apache.org/security-11.html#Fixed_in_Apache_Tomcat_11.0.20",
+            "https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.116",
+            "https://www.cve.org/CVERecord?id=CVE-2026-24880",
+            "https://www.herodevs.com/vulnerability-directory/cve-2026-24880"
+          ],
+          "PublishedDate": "2026-04-09T20:16:24.06Z",
+          "LastModifiedDate": "2026-06-17T10:23:44.317Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-34483",
+          "VendorIDs": [
+            "GHSA-rv64-5gf8-9qq8"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.116, 10.1.54, 11.0.21",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-34483",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:90fc549ba3109f09c854e80e4dd96a8cd9ad800acd669e0323e305339ac81504",
+          "Title": "Apache Tomcat: Apache Tomcat: Information disclosure due to improper encoding in JsonAccessLogValve",
+          "Description": "Improper Encoding or Escaping of Output vulnerability in the JsonAccessLogValve component of Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.20, from 10.1.0-M1 through 10.1.53, from 9.0.40 through 9.0.116.\n\nUsers are recommended to upgrade to version 11.0.21, 10.1.54 or 9.0.117 , which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-116"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "bitnami": 3,
+            "ghsa": 3,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+              "V3Score": 5.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/04/09/26",
+            "https://access.redhat.com/security/cve/CVE-2026-34483",
+            "https://github.com/apache/tomcat",
+            "https://lists.apache.org/thread/j1w7304yonlr8vo1tkb5nfs7od1y228b",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-34483",
+            "https://www.cve.org/CVERecord?id=CVE-2026-34483"
+          ],
+          "PublishedDate": "2026-04-09T20:16:24.937Z",
+          "LastModifiedDate": "2026-06-17T10:39:07.367Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-41284",
+          "VendorIDs": [
+            "GHSA-gx5v-xp9w-j4cg"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.118, 10.1.55, 11.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41284",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:050c5557db789b8000879d510956a23ae4b401f4a0b2596ab5892fdf59f0f5db",
+          "Title": "Allocation of Resources Without Limits or Throttling vulnerability in  ...",
+          "Description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117.\nOlder, unsupported versions may also be affected.\n\nUsers are recommended to upgrade to version [FIXED_VERSION], which fixes the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/12/12",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/17dacd9aa48628da2eba37a9ab743c0b6c71685c",
+            "https://github.com/apache/tomcat/commit/a96fffd18487a29c0a30d36f00cb2b2d91f6d42c",
+            "https://github.com/apache/tomcat/commit/b3d1c1c239142e806be0b7329d304b94a58913ed",
+            "https://lists.apache.org/thread/2nvqjr7ovjmvx2vbhb7s61ycd5msc8qc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41284",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://ubuntu.com/security/notices/USN-8417-1",
+            "https://ubuntu.com/security/notices/USN-8450-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-41284"
+          ],
+          "PublishedDate": "2026-05-12T16:16:15.933Z",
+          "LastModifiedDate": "2026-06-17T10:46:26.477Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-42498",
+          "VendorIDs": [
+            "GHSA-fv25-8xcx-gqjc"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.118, 10.1.55, 11.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-42498",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:5a6001a2c4f1c33ebdd60469ab60fa4c338b93c62e7ccbd6af2d218e5b1bca48",
+          "Title": "tomcat-coyote: Apache Tomcat: Information disclosure due to HTTP Authentication Header exposure during WebSocket authentication.",
+          "Description": "Exposure of HTTP Authentication Header to unexpected hosts during WebSocket authentication vulnerability in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.2 through 9.0.117, from 8.5.24 through 8.5.100, from 7.0.83 through 7.0.109.\n\nUsers are recommended to upgrade to version 11.0.22, 10.1.55 or 9.0.118, which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/12/14",
+            "https://access.redhat.com/security/cve/CVE-2026-42498",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/169d725788ea6aec217ecac70fe4161c837ba423",
+            "https://github.com/apache/tomcat/commit/6cbe274592ef2d11607b5b188e1df649de52f8d5",
+            "https://github.com/apache/tomcat/commit/b7b173694d588ddcfa432f079baf763cbbbaa5c4",
+            "https://lists.apache.org/thread/n61zwf75jrv09rz90j4jssncm244bwdb",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-42498",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://ubuntu.com/security/notices/USN-8417-1",
+            "https://ubuntu.com/security/notices/USN-8450-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-42498"
+          ],
+          "PublishedDate": "2026-05-12T16:16:17.8Z",
+          "LastModifiedDate": "2026-06-17T10:47:56.043Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-43513",
+          "VendorIDs": [
+            "GHSA-5mp6-jrq3-r938"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.118, 10.1.55, 11.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-43513",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:45017260b103c6b8f7ba7c395093311737e739501e039f05867094c2e46aaeab",
+          "Title": "tomcat-catalina: Apache Tomcat: Improper Handling of Case Sensitivity in LockOutRealm",
+          "Description": "Improper Handling of Case Sensitivity vulnerability in LockOutRealm in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109.\nOlder unsupported versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.22, 10.1.55 or 9.0.118 which fix the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-178"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/12/9",
+            "https://access.redhat.com/security/cve/CVE-2026-43513",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/4a90d3fa93988c447cd5bb7482f76ff70d7f15c2",
+            "https://github.com/apache/tomcat/commit/6dd75beb55bd42fc5f78e929596b25018cd17717",
+            "https://github.com/apache/tomcat/commit/83f3e51df7b87f5f6e626951c575ded1a512e8ef",
+            "https://lists.apache.org/thread/ytjcgldshj73lcnd1sh95od5hrghwogp",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-43513",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://ubuntu.com/security/notices/USN-8383-1",
+            "https://ubuntu.com/security/notices/USN-8417-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-43513"
+          ],
+          "PublishedDate": "2026-05-12T16:16:18.177Z",
+          "LastModifiedDate": "2026-06-17T10:49:50.74Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-66614",
+          "VendorIDs": [
+            "GHSA-fpj8-gq4v-p354"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "11.0.15, 10.1.50, 9.0.113",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-66614",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:6cb3c0c431217b7021d246bbf4fff87e51bfdb3bb51c377a10f4b983189776f6",
+          "Title": "tomcat: Client certificate verification bypass due to virtual host mapping",
+          "Description": "Improper Input Validation vulnerability.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.14, from 10.1.0-M1 through 10.1.49, from 9.0.0-M1 through 9.0.112.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 through 8.5.100. Older EOL versions are not affected.\nTomcat did not validate that the host name provided via the SNI \nextension was the same as the host name provided in the HTTP host header \nfield. If Tomcat was configured with more than one virtual host and the \nTLS configuration for one of those hosts did not require client \ncertificate authentication but another one did, it was possible for a \nclient to bypass the client certificate authentication by sending \ndifferent host names in the SNI extension and the HTTP host header field.\n\n\n\nThe vulnerability only applies if client certificate authentication is \nonly enforced at the Connector. It does not apply if client certificate \nauthentication is enforced at the web application.\n\n\nUsers are recommended to upgrade to version 11.0.15 or later, 10.1.50 or later or 9.0.113 or later, which fix the issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+              "V3Score": 9.1,
+              "V40Score": 6.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-66614",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/152c14885d45f5e0a8b59bd9f93c289cfe20ce30",
+            "https://github.com/apache/tomcat/commit/258a591b61f8cf5c22109e21e5a2a38b63454fd2",
+            "https://github.com/apache/tomcat/commit/5053fa82a1b2b52756810601227984a8b71888a4",
+            "https://github.com/apache/tomcat/commit/9276b5e783c8cd5b3fe2bb716306b65004bdd940",
+            "https://github.com/apache/tomcat/commit/972f9a5e2a07674d92610c478aac1b205d60724e",
+            "https://github.com/apache/tomcat/commit/a4aa74232e826028cd2f7ba0445caf8a8b52c509",
+            "https://lists.apache.org/thread/vw6lxtlh2qbqwpb61wd3sv1flm2nttw7",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-66614",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://www.cve.org/CVERecord?id=CVE-2025-66614"
+          ],
+          "PublishedDate": "2026-02-17T19:21:55.31Z",
+          "LastModifiedDate": "2026-06-17T09:57:06.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-25854",
+          "VendorIDs": [
+            "GHSA-9m3c-qcxr-9x87"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.116, 10.1.53, 11.0.20",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-25854",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:af42115548bae802b15516b7404299aeb6c6d236026354b44b2c9e92e4d5e842",
+          "Title": "Apache Tomcat: Apache Tomcat: Open Redirect vulnerability via LoadBalancerDrainingValve",
+          "Description": "Occasional URL redirection to untrusted Site ('Open Redirect') vulnerability in Apache Tomcat via the LoadBalancerDrainingValve.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.18, from 10.1.0-M1 through 10.1.52, from 9.0.0.M23 through 9.0.115, from 8.5.30 through 8.5.100.\nOther, unsupported versions may also be affected\n\nUsers are recommended to upgrade to version 11.0.20, 10.1.53 or 9.0.116, which fix the issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "bitnami": 2,
+            "ghsa": 2,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N",
+              "V3Score": 6.1,
+              "V40Score": 6.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/04/09/21",
+            "https://access.redhat.com/security/cve/CVE-2026-25854",
+            "https://github.com/apache/tomcat",
+            "https://lists.apache.org/thread/ghct3b6o74bp2vm7q875s1zh0dqrz3h0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-25854",
+            "https://www.cve.org/CVERecord?id=CVE-2026-25854"
+          ],
+          "PublishedDate": "2026-04-09T20:16:24.207Z",
+          "LastModifiedDate": "2026-06-17T10:25:19.763Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-55754",
+          "VendorIDs": [
+            "GHSA-vfww-5hm6-hx2j"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "11.0.11, 10.1.45, 9.0.109",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-55754",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:9c83ffb76d5dc017d7ed77a07a1aaed41ee0b8e9aad83c39499f9aad9f8ccb75",
+          "Title": "org.apache.tomcat/tomcat-juli: tomcat: Apache Tomcat: console manipulation",
+          "Description": "Improper Neutralization of Escape, Meta, or Control Sequences vulnerability in Apache Tomcat.\n\nTomcat did not escape ANSI escape sequences in log messages. If Tomcat was running in a console on a Windows operating system, and the console supported ANSI escape sequences, it was possible for an attacker to use a specially crafted URL to inject ANSI escape sequences to manipulate the console and the clipboard and attempt to trick an administrator into running an attacker controlled command. While no attack vector was found, it may have been possible to mount this attack on other operating systems.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.10, from 10.1.0-M1 through 10.1.44, from 9.0.40 through 9.0.108.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.60 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.11 or later, 10.1.45 or later or 9.0.109 or later, which fix the issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-150"
+          ],
+          "VendorSeverity": {
+            "bitnami": 4,
+            "ghsa": 1,
+            "oracle-oval": 3,
+            "redhat": 2,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V3Score": 9.7
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N",
+              "V3Score": 9.7,
+              "V40Score": 2.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N",
+              "V3Score": 3.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/10/27/5",
+            "https://access.redhat.com/security/cve/CVE-2025-55754",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2369253",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2388226",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2406590",
+            "https://cert-portal.siemens.com/productcert/html/ssa-032379.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-46701",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-55668",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-55754",
+            "https://errata.rockylinux.org/RLSA-2026:18537",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/138d7f5cfaae683078948303333c080e6faa75d2",
+            "https://github.com/apache/tomcat/commit/138d7f5cfaae683078948303333c080e6faa75d2%20%2810.1.45%29",
+            "https://github.com/apache/tomcat/commit/5a3db092982c0c58d4855304167ee757fe5e79bb",
+            "https://github.com/apache/tomcat/commit/5a3db092982c0c58d4855304167ee757fe5e79bb%20%2811.0.11%29",
+            "https://github.com/apache/tomcat/commit/a03cabf3a36a42d27d8d997ed31f034f50ba6cd5",
+            "https://github.com/apache/tomcat/commit/a03cabf3a36a42d27d8d997ed31f034f50ba6cd5%20%289.0.109%29",
+            "https://linux.oracle.com/cve/CVE-2025-55754.html",
+            "https://linux.oracle.com/errata/ELSA-2026-18916.html",
+            "https://lists.apache.org/thread/j7w54hqbkfcn0xb9xy0wnx8w5nymcbqd",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-55754",
+            "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.45",
+            "https://tomcat.apache.org/security-11.html#Fixed_in_Apache_Tomcat_11.0.11",
+            "https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.109",
+            "https://www.cve.org/CVERecord?id=CVE-2025-55754"
+          ],
+          "PublishedDate": "2025-10-27T18:15:42.71Z",
+          "LastModifiedDate": "2026-06-17T09:42:10.84Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-61795",
+          "VendorIDs": [
+            "GHSA-hgrr-935x-pq79"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "11.0.12, 10.1.47, 9.0.110",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61795",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:42e335a07bb92055ef543fd15a5c3fbc097495df62a041641bc4dcb0e17342b0",
+          "Title": "tomcat: org.apache.tomcat/tomcat-catalina: Apache Tomcat: Denial of service",
+          "Description": "Improper Resource Shutdown or Release vulnerability in Apache Tomcat.\n\nIf an error occurred (including exceeding limits) during the processing of a multipart upload, temporary copies of the uploaded parts written to disc were not cleaned up immediately but left for the garbage collection process to delete. Depending on JVM settings, application memory usage and application load, it was possible that space for the temporary copies of uploaded parts would be filled faster than GC cleared it, leading to a DoS.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.11, from 10.1.0-M1 through 10.1.46, from 9.0.0.M1 through 9.0.109.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.12 or later, 10.1.47 or later or 9.0.110 or later which fixes the issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-404"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "bitnami": 2,
+            "ghsa": 1,
+            "oracle-oval": 3,
+            "redhat": 2,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+              "V3Score": 5.3,
+              "V40Score": 2.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/10/27/6",
+            "https://access.redhat.com/errata/RHSA-2025:23050",
+            "https://access.redhat.com/security/cve/CVE-2025-61795",
+            "https://bugzilla.redhat.com/2362782",
+            "https://bugzilla.redhat.com/2406588",
+            "https://bugzilla.redhat.com/2406591",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2362782",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2406588",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2406591",
+            "https://cert-portal.siemens.com/productcert/html/ssa-032379.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-31651",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-55752",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61795",
+            "https://errata.almalinux.org/10/ALSA-2025-23050.html",
+            "https://errata.rockylinux.org/RLSA-2025:23050",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/1cdf5f730ede75a0759492f179ac21ca4ff68e06",
+            "https://github.com/apache/tomcat/commit/1cdf5f730ede75a0759492f179ac21ca4ff68e06%20%2811.0.12%29",
+            "https://github.com/apache/tomcat/commit/af6e9181620304c0d818121c29c074e1330610d0",
+            "https://github.com/apache/tomcat/commit/af6e9181620304c0d818121c29c074e1330610d0%20%2810.1.47%29",
+            "https://github.com/apache/tomcat/commit/afa422bd7ca1eef0f507259c682fd876494d9c3b",
+            "https://github.com/apache/tomcat/commit/afa422bd7ca1eef0f507259c682fd876494d9c3b%20%289.0.110%29",
+            "https://linux.oracle.com/cve/CVE-2025-61795.html",
+            "https://linux.oracle.com/errata/ELSA-2025-23050.html",
+            "https://lists.apache.org/thread/wm9mx8brmx9g4zpywm06ryrtvd3160pp",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-61795",
+            "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.47",
+            "https://tomcat.apache.org/security-11.html#Fixed_in_Apache_Tomcat_11.0.12",
+            "https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.110",
+            "https://www.cve.org/CVERecord?id=CVE-2025-61795"
+          ],
+          "PublishedDate": "2025-10-27T18:15:44.2Z",
+          "LastModifiedDate": "2026-06-17T09:50:54.733Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-43514",
+          "VendorIDs": [
+            "GHSA-9m89-8frq-c98c"
+          ],
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:10.1.42",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42",
+            "UID": "3cc42809a0d6f89",
+            "BOMRef": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.42?package-id=90cefb1aca8edbc6"
+          },
+          "InstalledVersion": "10.1.42",
+          "FixedVersion": "9.0.118, 10.1.55, 11.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-43514",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:912d803a34c75aa478c2e2d5fbf89ac9211ee3a4bc191429111504383b1f288a",
+          "Title": "tomcat-coyote: Apache Tomcat: Information disclosure via AJP secret timing discrepancy",
+          "Description": "Observable Timing Discrepancy vulnerability when comparing AJP secret in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109.\nOlder unsupported versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.22, 10.1.55 or 9.0.118 which fix the issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-208"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 1,
+            "ghsa": 1,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.7
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/12/10",
+            "https://access.redhat.com/security/cve/CVE-2026-43514",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/933dcdbf2515972280002929e7e597dead2e9ffa",
+            "https://github.com/apache/tomcat/commit/a102a2a157868ca51d83eaf5a119ccd9976a113e",
+            "https://github.com/apache/tomcat/commit/d35d9d23263c8e4af561f615c960c91697ff200e",
+            "https://lists.apache.org/thread/2k654v5cq123npfsd1b2kk1y30owqb1m",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-43514",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://www.cve.org/CVERecord?id=CVE-2026-43514"
+          ],
+          "PublishedDate": "2026-05-12T16:16:18.37Z",
+          "LastModifiedDate": "2026-06-17T10:49:50.88Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-40973",
+          "VendorIDs": [
+            "GHSA-wwpq-f5c3-7hvx"
+          ],
+          "PkgID": "org.springframework.boot:spring-boot:3.3.13",
+          "PkgName": "org.springframework.boot:spring-boot",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot@3.3.13",
+            "UID": "4325d134ce33570d",
+            "BOMRef": "pkg:maven/org.springframework.boot/spring-boot@3.3.13?package-id=be16db522edaa66c"
+          },
+          "InstalledVersion": "3.3.13",
+          "FixedVersion": "4.0.6, 3.5.14",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-40973",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:73b7ab94e8e8e6520cec94ab7114053a87d3a06a7828632327cbccc3fe9849c0",
+          "Title": "Spring Boot: Spring Boot: Arbitrary Code Execution and Session Hijacking via predictable temporary directory",
+          "Description": "A local attacker on the same host as the application may be able to take control of the directory used by `ApplicationTemp`. When `server.servlet.session.persistent` is set to `true` and the attack persists across application restarts, this may allow the attacker to read session information and hijack authenticated users or deploy a gadget chain and execute code as the application's user.\n\nAffected: Spring Boot 4.0.0–4.0.5 (fix 4.0.6), 3.5.0–3.5.13 (fix 3.5.14), 3.4.0–3.4.15 (fix 3.4.16), 3.3.0–3.3.18 (fix 3.3.19), 2.7.0–2.7.32 (fix 2.7.33); predictable temp directory / `ApplicationTemp` ownership verification. Versions that are no longer supported are also affected per vendor advisory.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-377"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-40973",
+            "https://github.com/spring-projects/spring-boot",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-40973",
+            "https://spring.io/security/cve-2026-40973",
+            "https://www.cve.org/CVERecord?id=CVE-2026-40973"
+          ],
+          "PublishedDate": "2026-04-28T00:16:24.357Z",
+          "LastModifiedDate": "2026-06-17T10:45:57.82Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-41249",
+          "VendorIDs": [
+            "GHSA-jmp9-x22r-554x"
+          ],
+          "PkgID": "org.springframework:spring-core:6.1.21",
+          "PkgName": "org.springframework:spring-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-core@6.1.21",
+            "UID": "88eda8c9c1b8b23a",
+            "BOMRef": "pkg:maven/org.springframework/spring-core@6.1.21?package-id=7316503115d317cc"
+          },
+          "InstalledVersion": "6.1.21",
+          "FixedVersion": "6.2.11",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-41249",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:8e38f27390993a3a98fc98d9e61c31765e7a010b2d4d628b545b81751046c170",
+          "Title": "org.springframework/spring-core: Spring Framework Annotation Detection Vulnerability",
+          "Description": "The Spring Framework annotation detection mechanism may not correctly resolve annotations on methods within type hierarchies with a parameterized super type with unbounded generics. This can be an issue if such annotations are used for authorization decisions.\n\nYour application may be affected by this if you are using Spring Security's @EnableMethodSecurity feature.\n\nYou are not affected by this if you are not using @EnableMethodSecurity or if you do not use security annotations on methods in generic superclasses or generic interfaces.\n\nThis CVE is published in conjunction with  CVE-2025-41248 https://spring.io/security/cve-2025-41248 .",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-285"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-41249",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/6d710d482a6785b069e35022e81758953afc21ff",
+            "https://github.com/spring-projects/spring-framework/issues/35342",
+            "https://github.com/spring-projects/spring-framework/releases/tag/v6.2.11",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-41249",
+            "https://spring.io/security/cve-2025-41249",
+            "https://www.cve.org/CVERecord?id=CVE-2025-41249"
+          ],
+          "PublishedDate": "2025-09-16T11:15:30.887Z",
+          "LastModifiedDate": "2026-06-17T09:22:40.307Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-41242",
+          "VendorIDs": [
+            "GHSA-r936-gwx5-v52f"
+          ],
+          "PkgID": "org.springframework:spring-webmvc:6.1.21",
+          "PkgName": "org.springframework:spring-webmvc",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@6.1.21",
+            "UID": "c8098dcd0245a6eb",
+            "BOMRef": "pkg:maven/org.springframework/spring-webmvc@6.1.21?package-id=de578ac9bcb8ef53"
+          },
+          "InstalledVersion": "6.1.21",
+          "FixedVersion": "6.2.10",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-41242",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:6fa020d83e19607b57b3f867cdf026378e33cde5d0dd8ea79e36ef623d6a259c",
+          "Title": "org.springframework/spring-webmvc: Spring Framework MVC path traversal vulnerability",
+          "Description": "Spring Framework MVC applications can be vulnerable to a “Path Traversal Vulnerability” when deployed on a non-compliant Servlet container.\n\nAn application can be vulnerable when all the following are true:\n\n  *  the application is deployed as a WAR or with an embedded Servlet container\n  *  the Servlet container  does not reject suspicious sequences https://jakarta.ee/specifications/servlet/6.1/jakarta-servlet-spec-6.1.html#uri-path-canonicalization \n  *  the application  serves static resources https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title  with Spring resource handling\n\n\nWe have verified that applications deployed on Apache Tomcat or Eclipse Jetty are not vulnerable, as long as default security features are not disabled in the configuration. Because we cannot check exploits against all Servlet containers and configuration variants, we strongly recommend upgrading your application.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://spring.io/security/cve-2025-41242",
+            "https://access.redhat.com/security/cve/CVE-2025-41242",
+            "https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title",
+            "https://github.com/spring-projects/spring-framework",
+            "https://jakarta.ee/specifications/servlet/6.1/jakarta-servlet-spec-6.1.html#uri-path-canonicalization",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-41242",
+            "https://www.cve.org/CVERecord?id=CVE-2025-41242"
+          ],
+          "PublishedDate": "2025-08-18T09:15:28.637Z",
+          "LastModifiedDate": "2026-06-17T09:22:39.677Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-22737",
+          "VendorIDs": [
+            "GHSA-4773-3jfm-qmx3"
+          ],
+          "PkgID": "org.springframework:spring-webmvc:6.1.21",
+          "PkgName": "org.springframework:spring-webmvc",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@6.1.21",
+            "UID": "c8098dcd0245a6eb",
+            "BOMRef": "pkg:maven/org.springframework/spring-webmvc@6.1.21?package-id=de578ac9bcb8ef53"
+          },
+          "InstalledVersion": "6.1.21",
+          "FixedVersion": "7.0.6, 6.2.17",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-22737",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:15e892da72cdd3f78c615dc6a7e5142af1a83a0687b6a737ffc78f0de9a13216",
+          "Title": "Spring Framework: Spring Framework: Information disclosure via Java scripting engine enabled template views",
+          "Description": "Use of Java scripting engine enabled (e.g. JRuby, Jython) template views in Spring MVC and Spring WebFlux applications can result in disclosure of content from files outside the configured locations for script template views. This issue affects Spring Framework: from 7.0.0 through 7.0.5, from 6.2.0 through 6.2.16, from 6.1.0 through 6.1.25, from 5.3.0 through 5.3.46.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-22737",
+            "https://github.com/spring-projects/spring-framework",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-22737",
+            "https://spring.io/security/cve-2026-22737",
+            "https://www.cve.org/CVERecord?id=CVE-2026-22737"
+          ],
+          "PublishedDate": "2026-03-20T00:16:15.837Z",
+          "LastModifiedDate": "2026-06-17T10:20:19.327Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-22745",
+          "VendorIDs": [
+            "GHSA-6p4f-wcwh-5vvm"
+          ],
+          "PkgID": "org.springframework:spring-webmvc:6.1.21",
+          "PkgName": "org.springframework:spring-webmvc",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@6.1.21",
+            "UID": "c8098dcd0245a6eb",
+            "BOMRef": "pkg:maven/org.springframework/spring-webmvc@6.1.21?package-id=de578ac9bcb8ef53"
+          },
+          "InstalledVersion": "6.1.21",
+          "FixedVersion": "7.0.7, 6.2.18",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-22745",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:5e0ce24fcbf9d113c98c1f17f8be7a70418246e55646d769018d8affdf8026bf",
+          "Title": "spring-webflux: Spring MVC and Spring WebFlux: Denial of Service via slow static resource resolution on Windows",
+          "Description": "Spring MVC and WebFlux applications are vulnerable to Denial of Service attacks when resolving static resources.\n\n\nMore precisely, an application can be vulnerable when all the following are true:\n\n  *  the application is using Spring MVC or Spring WebFlux\n  *  the application is serving static resources from the file system\n  *  the application is running on a Windows platform\n\n\nWhen all the conditions above are met, the attacker can send malicious requests that are slow to resolve and that can keep HTTP connections in use. This can cause a Denial of Service on the application.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-22745",
+            "https://github.com/spring-projects/spring-framework",
+            "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L\u0026version=3.1",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-22745",
+            "https://spring.io/security/cve-2026-22745",
+            "https://www.cve.org/CVERecord?id=CVE-2026-22745"
+          ],
+          "PublishedDate": "2026-04-29T12:16:18.62Z",
+          "LastModifiedDate": "2026-06-17T10:20:21.627Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-22735",
+          "VendorIDs": [
+            "GHSA-6hcq-hmm3-jj3c"
+          ],
+          "PkgID": "org.springframework:spring-webmvc:6.1.21",
+          "PkgName": "org.springframework:spring-webmvc",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@6.1.21",
+            "UID": "c8098dcd0245a6eb",
+            "BOMRef": "pkg:maven/org.springframework/spring-webmvc@6.1.21?package-id=de578ac9bcb8ef53"
+          },
+          "InstalledVersion": "6.1.21",
+          "FixedVersion": "7.0.6, 6.2.17",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-22735",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:df9021b14b77333552e4779637f440e265aba74aceb98424f70778f35d363f07",
+          "Title": "org.springframework/spring-webmvc: org.springframework/spring-webflux: Spring MVC and WebFlux: Stream corruption vulnerability when using Server-Sent Events",
+          "Description": "Spring MVC and WebFlux applications are vulnerable to stream corruption when using Server-Sent Events (SSE). This issue affects Spring Foundation: from 7.0.0 through 7.0.5, from 6.2.0 through 6.2.16, from 6.1.0 through 6.1.25, from 5.3.0 through 5.3.46.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-667"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N",
+              "V3Score": 2.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N",
+              "V3Score": 2.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-22735",
+            "https://github.com/spring-projects/spring-framework",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-22735",
+            "https://spring.io/security/cve-2026-22735",
+            "https://www.cve.org/CVERecord?id=CVE-2026-22735"
+          ],
+          "PublishedDate": "2026-03-20T00:16:15.697Z",
+          "LastModifiedDate": "2026-06-17T10:20:19.22Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-22741",
+          "VendorIDs": [
+            "GHSA-wg35-8jpf-2xv3"
+          ],
+          "PkgID": "org.springframework:spring-webmvc:6.1.21",
+          "PkgName": "org.springframework:spring-webmvc",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@6.1.21",
+            "UID": "c8098dcd0245a6eb",
+            "BOMRef": "pkg:maven/org.springframework/spring-webmvc@6.1.21?package-id=de578ac9bcb8ef53"
+          },
+          "InstalledVersion": "6.1.21",
+          "FixedVersion": "7.0.7, 6.2.18",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-22741",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:705d164f6174adae4cc094e82933f8f22fd25be9ea4167210669f27e820280bc",
+          "Title": "Spring MVC: Spring WebFlux: Spring MVC and Spring WebFlux: Denial of Service via cache poisoning",
+          "Description": "Spring MVC and WebFlux applications are vulnerable to cache poisoning when resolving static resources.\n\n\nMore precisely, an application can be vulnerable when all the following are true:\n\n  *  the application is using Spring MVC or Spring WebFlux\n  *  the application is configuring the  resource chain support https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title  with caching enabled\n  *  the application adds support for encoded resources resolution\n  *  the resource cache must be empty when the attacker has access to the application\n\n\nWhen all the conditions above are met, the attacker can send malicious requests and poison the resource cache with resources using the wrong encoding. This can cause a denial of service by breaking the front-end application for clients.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-524"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-22741",
+            "https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title",
+            "https://github.com/spring-projects/spring-framework",
+            "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L\u0026version=3.1",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-22741",
+            "https://spring.io/security/cve-2026-22741",
+            "https://www.cve.org/CVERecord?id=CVE-2026-22741"
+          ],
+          "PublishedDate": "2026-04-29T12:16:18.487Z",
+          "LastModifiedDate": "2026-06-17T10:20:19.763Z"
+        }
+      ]
+    }
+  ]
+}
