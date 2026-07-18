@@ -24,7 +24,8 @@ async function request(path, options = {}) {
   const body = await response.json().catch(() => null);
 
   if (!response.ok) {
-    const message = (body && body.message) || `Request failed (${response.status})`;
+    // LoginResponse failures use "message"; the duplicate-user 409 uses "error".
+    const message = (body && (body.message || body.error)) || `Request failed (${response.status})`;
     throw new Error(message);
   }
 
