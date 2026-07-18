@@ -19,10 +19,20 @@ never touches the root project's build.
   here is accepted by `games-service` with no coordination beyond the
   shared secret — the core claim of this whole design, proven live, not
   just asserted. See `auth-service/README.md`.
-- **`reviews-service`** — not yet built. Depends on both of the above
-  being callable (it validates a review's `game_id` by calling
-  `games-service`, and its `user_id` comes from a JWT `auth-service`
-  issued).
+- **`reviews-service`** — built and verified. The only genuinely new
+  service (nothing to extract from the monolith). Validates a review's
+  `game_id` by actually calling `games-service` live (confirmed: a
+  nonexistent id correctly 404s, and stopping games-service entirely
+  correctly 503s instead of silently accepting bad data); `user_id`
+  comes from the JWT `auth-service` issued, never the request body. Full
+  chain proven end-to-end: registered via `auth-service`, created a game
+  via `games-service`, posted a review via `reviews-service` using that
+  same token. See `reviews-service/README.md`.
+
+**Phase 2 is now feature-complete** at the service level — all three
+services built, verified individually and together. Remaining: a
+gateway (see below) so the frontend can point at this stack without
+knowing which service owns which path.
 
 ## Services
 
@@ -60,6 +70,5 @@ cp .env.example .env   # fill in real values
 docker compose up
 ```
 
-Starts `auth-service` and `games-service`, each with its own MySQL
-container. As `reviews-service` is built, it'll be added to this same
-`docker-compose.yml`.
+Starts all three services (`auth-service`, `games-service`,
+`reviews-service`), each with its own MySQL container.

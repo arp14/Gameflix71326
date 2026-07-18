@@ -249,10 +249,28 @@ Done so far:
     type on first startup. Fixed the script to `VARCHAR(60)` to match.
     Two for two on schema-script bugs only surfacing once the real code
     actually ran against them.
-- **`services/docker-compose.yml`** now runs `auth-service` and
-  `games-service` together, each with its own MySQL container.
+- **`reviews-service` built and verified** — the only genuinely new
+  service; nothing to extract from the monolith. Uses Spring's
+  `RestClient` to call `games-service`'s `GET /api/games/{id}` live
+  before saving a review, since `game_id` can't be a real foreign key
+  across schemas. `Review` has an explicit `@Table(name = "reviews")`
+  (learned that lesson twice already) plus JPA-level
+  `@UniqueConstraint(game_id, user_id)` and `@Check(rating BETWEEN 1 AND
+  5)`, both confirmed enforced at the DB level, not just in code.
+  Verified the full chain for real: registered/logged in via
+  `auth-service`, created a game via `games-service`, then posted a
+  review via `reviews-service` using that same token — saved correctly.
+  Also checked: no token → 401; nonexistent `gameId` → 404 (the live
+  call actually runs); rating of 7 → 400; a second review from the same
+  user for the same game → 409; reads open with no token; and — the
+  resilience case — stopped `games-service` entirely and confirmed
+  `POST /api/reviews` returns 503 rather than silently accepting a review
+  it couldn't verify.
+- **`services/docker-compose.yml`** now runs all three services
+  together, each with its own MySQL container.
 
-Not yet built: `reviews-service` and the gateway. Reviews is next — it
-depends on both other services being callable (it calls `games-service`
-to validate `game_id`, and reads `user_id` from a JWT `auth-service`
-issued).
+**Phase 2 is feature-complete at the service level.** All three
+services exist, work individually, and interoperate correctly end to
+end. Not yet built: a gateway in front of them so the frontend can point
+at this stack using the same `/api/*` paths without knowing which
+service owns what.

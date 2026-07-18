@@ -73,6 +73,46 @@ services:
     networks:
       - gameflix-micro-net
 
+  reviews-mysql:
+    image: mysql:8.0
+    container_name: gameflix-reviews-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: reviews_db
+      MYSQL_USER: ${REVIEWS_DB_USERNAME}
+      MYSQL_PASSWORD: ${REVIEWS_DB_PASSWORD}
+    volumes:
+      - gameflix-reviews-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    networks:
+      - gameflix-micro-net
+
+  reviews-service:
+    build:
+      context: ./reviews-service
+      dockerfile: Dockerfile
+    container_name: gameflix-reviews-service
+    depends_on:
+      reviews-mysql:
+        condition: service_healthy
+      games-service:
+        condition: service_started
+    environment:
+      DB_URL: jdbc:mysql://reviews-mysql:3306/reviews_db
+      DB_USERNAME: ${REVIEWS_DB_USERNAME}
+      DB_PASSWORD: ${REVIEWS_DB_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+      GAMES_SERVICE_URL: http://games-service:8082
+    ports:
+      - "8083:8083"
+    networks:
+      - gameflix-micro-net
+
 networks:
   gameflix-micro-net:
     driver: bridge
@@ -80,3 +120,4 @@ networks:
 volumes:
   gameflix-auth-mysql-data:
   gameflix-games-mysql-data:
+  gameflix-reviews-mysql-data:
