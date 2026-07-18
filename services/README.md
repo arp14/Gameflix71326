@@ -14,9 +14,15 @@ never touches the root project's build.
 - **`games-service`** — built and verified (full CRUD, JWT-protected
   writes, open reads, including a new `GET /api/games/{id}` the monolith
   never needed). See `games-service/README.md`.
-- **`auth-service`**, **`reviews-service`** — not yet built. Auth is next
-  (games-service is done; reviews-service depends on both the others
-  being callable).
+- **`auth-service`** — built and verified (register, login, `/api/me`,
+  issues the JWTs the other services validate). Confirmed a token issued
+  here is accepted by `games-service` with no coordination beyond the
+  shared secret — the core claim of this whole design, proven live, not
+  just asserted. See `auth-service/README.md`.
+- **`reviews-service`** — not yet built. Depends on both of the above
+  being callable (it validates a review's `game_id` by calling
+  `games-service`, and its `user_id` comes from a JWT `auth-service`
+  issued).
 
 ## Services
 
@@ -54,6 +60,6 @@ cp .env.example .env   # fill in real values
 docker compose up
 ```
 
-Right now this only starts `games-service` + its own MySQL. As
-`auth-service`/`reviews-service` are built, they'll be added to this same
+Starts `auth-service` and `games-service`, each with its own MySQL
+container. As `reviews-service` is built, it'll be added to this same
 `docker-compose.yml`.

@@ -230,6 +230,29 @@ Done so far:
     empty table alongside the manually-scripted one. Fixed by renaming
     the script's table to `game` to match reality, a good example of why
     "the DDL runs without error" isn't the same as "the DDL is correct."
+- **`auth-service` built and verified** — extracted from the monolith's
+  `AuthController`/`ProfileController`/`UserService`/`User`/`Credential`,
+  plus the full `JwtService` (this one actually issues tokens; the other
+  two only validate). Verified directly: register, duplicate-username
+  rejection (409), wrong-password rejection (401), successful login
+  returns a token, `/api/me` correctly requires it. Then the actual point
+  of the whole design: logged in via `auth-service` (port 8081), took
+  that token, and used it directly against a separately-running
+  `games-service` instance (port 8082, different database, no
+  coordination between them) to create a game — accepted, proving the
+  shared-`JWT_SECRET` validation works across services for real, not
+  just in theory.
+  - **Second schema bug caught the same way**: `db/auth_db.sql` had
+    `password_hash CHAR(60)`, but the `Credential` entity's
+    `@Column(length = 60)` with no `columnDefinition` override defaults
+    to `VARCHAR`, not `CHAR` — Hibernate silently `ALTER`ed the column
+    type on first startup. Fixed the script to `VARCHAR(60)` to match.
+    Two for two on schema-script bugs only surfacing once the real code
+    actually ran against them.
+- **`services/docker-compose.yml`** now runs `auth-service` and
+  `games-service` together, each with its own MySQL container.
 
-Not yet built: `auth-service`, `reviews-service`, and the gateway.
-`auth-service` is next.
+Not yet built: `reviews-service` and the gateway. Reviews is next — it
+depends on both other services being callable (it calls `games-service`
+to validate `game_id`, and reads `user_id` from a JWT `auth-service`
+issued).
