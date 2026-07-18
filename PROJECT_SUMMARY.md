@@ -194,7 +194,26 @@ and verified; the React frontend covers register/login, session
 persistence, browsing games, full CRUD on games for logged-in users (both
 UI-gated and now server-enforced), and a profile page.
 
-**Not started:** Phase 2 — converting the monolith into microservices
-(discussed conceptually earlier: a 3-service split, a `GameflixMicro`
-schema without the hotel table). This was intentionally deferred until
-the frontend reached a reasonable stopping point.
+**In progress:** Phase 2 — converting the monolith into microservices,
+built alongside it in `services/` without touching the working monolith
+at the repo root at all. Decisions locked in: three services (Auth,
+Games, Reviews — Reviews replacing the earlier "hotel" domain from the
+original conceptual ERD discussion, which was never actually
+implemented), one MySQL server with three separate schemas rather than
+three separate DB instances, and no cross-service foreign keys (a
+service calls another service's API instead of querying its database
+directly).
+
+Done so far:
+- **Schema design** (`db/auth_db.sql`, `games_db.sql`, `reviews_db.sql`,
+  `db/README.md`) — verified directly against MariaDB, including that
+  the constraints (foreign key, rating CHECK, unique-review-per-user)
+  actually reject bad data, not just that the DDL runs.
+- **`services/` skeleton** — one folder per service, each with a README
+  describing its planned responsibility, owned schema, and port
+  (Auth 8081, Games 8082, Reviews 8083, with a future gateway on 8080 so
+  the frontend's existing `/api/*` proxy target doesn't need to change).
+
+Not yet built: any actual service code. Games service is next — planned
+as the first extraction since nothing else depends on it, to be verified
+working standalone before moving on to Auth and then Reviews.

@@ -4,6 +4,13 @@ A Spring Boot 3 (Java 17) + React application built as a semester-long
 assignment: user auth with JWT, MySQL persistence, Docker packaging, a
 CI/CD pipeline, a supply-chain security audit, and a React frontend on top.
 
+**Two versions live in this repo.** Everything below describes **v1**,
+the monolith at the repo root — this is the graded assignment deliverable
+and the one the frontend talks to by default. **v2**, an in-progress
+microservices split (Auth/Games/Reviews services), is being built
+alongside it in [`services/`](services/README.md) without touching v1 at
+all; see that directory for its own status and docs.
+
 ## Tech stack
 
 - **Backend:** Spring Boot 3.3.13, Spring Data JPA + Hibernate, MySQL
@@ -29,6 +36,9 @@ frontend/
   src/components/  NavBar, RequireAuth
   src/context/      AuthContext (JWT storage + session restore)
   src/api/          Thin fetch wrapper (client.js)
+
+db/         Phase 2 database schemas (auth_db, games_db, reviews_db)
+services/   Phase 2 microservices (v2) - see services/README.md
 ```
 
 ## Running the backend
