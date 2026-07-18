@@ -17,7 +17,7 @@ function NavBar() {
       <NavLink to="/games">Games</NavLink>
       {user ? (
         <>
-          <span>Hi, {user.username}</span>
+          <NavLink to="/profile">Hi, {user.username}</NavLink>
           <button type="button" className="link-button" onClick={handleLogout}>
             Log out
           </button>

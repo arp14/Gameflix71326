@@ -39,3 +39,11 @@ export function get(path) {
 export function post(path, data) {
   return request(path, { method: 'POST', body: JSON.stringify(data) });
 }
+
+export function put(path, data) {
+  return request(path, { method: 'PUT', body: JSON.stringify(data) });
+}
+
+export function del(path) {
+  return request(path, { method: 'DELETE' });
+}
