@@ -1,0 +1,44 @@
+services:
+  games-mysql:
+    image: mysql:8.0
+    container_name: gameflix-games-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: games_db
+      MYSQL_USER: ${GAMES_DB_USERNAME}
+      MYSQL_PASSWORD: ${GAMES_DB_PASSWORD}
+    volumes:
+      - gameflix-games-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    networks:
+      - gameflix-micro-net
+
+  games-service:
+    build:
+      context: ./games-service
+      dockerfile: Dockerfile
+    container_name: gameflix-games-service
+    depends_on:
+      games-mysql:
+        condition: service_healthy
+    environment:
+      DB_URL: jdbc:mysql://games-mysql:3306/games_db
+      DB_USERNAME: ${GAMES_DB_USERNAME}
+      DB_PASSWORD: ${GAMES_DB_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+    ports:
+      - "8082:8082"
+    networks:
+      - gameflix-micro-net
+
+networks:
+  gameflix-micro-net:
+    driver: bridge
+
+volumes:
+  gameflix-games-mysql-data:

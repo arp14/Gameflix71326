@@ -213,7 +213,23 @@ Done so far:
   describing its planned responsibility, owned schema, and port
   (Auth 8081, Games 8082, Reviews 8083, with a future gateway on 8080 so
   the frontend's existing `/api/*` proxy target doesn't need to change).
+- **`games-service` built and verified** — a standalone Spring Boot
+  module extracted from the monolith's `GameController`/`GameService`/
+  `Game`, plus its own validation-only `JwtService` (shares
+  `auth-service`'s future `JWT_SECRET`, never issues tokens itself). Also
+  gained a new `GET /api/games/{id}` the monolith never needed, for
+  `reviews-service`'s future existence check. Has its own
+  `docker-compose.yml` (own MySQL container, `games_db` only). Verified
+  directly: full CRUD works with a valid token; writes 401 without one;
+  both GET routes stay open regardless; a nonexistent id 404s; a garbage
+  token 401s.
+  - **Bug caught along the way**: the original `db/games_db.sql` named
+    the table `games` (plural), but Hibernate's default naming for the
+    `Game` entity (no `@Table` override, matching the monolith) produces
+    `game` (singular) — running the service actually created a second,
+    empty table alongside the manually-scripted one. Fixed by renaming
+    the script's table to `game` to match reality, a good example of why
+    "the DDL runs without error" isn't the same as "the DDL is correct."
 
-Not yet built: any actual service code. Games service is next — planned
-as the first extraction since nothing else depends on it, to be verified
-working standalone before moving on to Auth and then Reviews.
+Not yet built: `auth-service`, `reviews-service`, and the gateway.
+`auth-service` is next.

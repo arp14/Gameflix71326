@@ -11,10 +11,12 @@ never touches the root project's build.
 
 ## Status
 
-Skeleton only right now — folders and this documentation, no code yet.
-Each service will be filled in one at a time, starting with
-`games-service` (lowest risk: nothing else depends on it), verified
-working on its own before moving to the next.
+- **`games-service`** — built and verified (full CRUD, JWT-protected
+  writes, open reads, including a new `GET /api/games/{id}` the monolith
+  never needed). See `games-service/README.md`.
+- **`auth-service`**, **`reviews-service`** — not yet built. Auth is next
+  (games-service is done; reviews-service depends on both the others
+  being callable).
 
 ## Services
 
@@ -44,11 +46,14 @@ once — they'd collide on 8080.)
 - **Database schemas**: already designed and verified in `../db/` (step
   1 of this phase) — `auth_db.sql`, `games_db.sql`, `reviews_db.sql`.
 
-## Running this stack (once built)
+## Running this stack
 
 ```
 cd services
+cp .env.example .env   # fill in real values
 docker compose up
 ```
 
-(Compose file not yet added — comes with the first working service.)
+Right now this only starts `games-service` + its own MySQL. As
+`auth-service`/`reviews-service` are built, they'll be added to this same
+`docker-compose.yml`.
