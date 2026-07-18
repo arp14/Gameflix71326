@@ -71,4 +71,20 @@ docker compose up
 ```
 
 Starts all three services (`auth-service`, `games-service`,
-`reviews-service`), each with its own MySQL container.
+`reviews-service`), each with its own MySQL container. Each database is
+also exposed to your host machine, so you can connect with a GUI tool
+(MySQL Workbench, DBeaver, etc.) or the `mysql` CLI directly, same as any
+local MySQL server:
+
+| Database | Host port | Container |
+|---|---|---|
+| `auth_db` | `3307` | `gameflix-auth-mysql` |
+| `games_db` | `3308` | `gameflix-games-mysql` |
+| `reviews_db` | `3309` | `gameflix-reviews-mysql` |
+
+Connect to `localhost:<port>` with username `root` and the
+`MYSQL_ROOT_PASSWORD` from your `.env` (or the service-specific
+username/password for that database only). These are separate MySQL
+instances from your host's own MySQL install (if you have one) and from
+the monolith's database — nothing here overlaps with anything else on
+your machine.

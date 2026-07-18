@@ -7,6 +7,8 @@ services:
       MYSQL_DATABASE: auth_db
       MYSQL_USER: ${AUTH_DB_USERNAME}
       MYSQL_PASSWORD: ${AUTH_DB_PASSWORD}
+    ports:
+      - "3307:3306"
     volumes:
       - gameflix-auth-mysql-data:/var/lib/mysql
     healthcheck:
@@ -44,6 +46,8 @@ services:
       MYSQL_DATABASE: games_db
       MYSQL_USER: ${GAMES_DB_USERNAME}
       MYSQL_PASSWORD: ${GAMES_DB_PASSWORD}
+    ports:
+      - "3308:3306"
     volumes:
       - gameflix-games-mysql-data:/var/lib/mysql
     healthcheck:
@@ -81,6 +85,8 @@ services:
       MYSQL_DATABASE: reviews_db
       MYSQL_USER: ${REVIEWS_DB_USERNAME}
       MYSQL_PASSWORD: ${REVIEWS_DB_PASSWORD}
+    ports:
+      - "3309:3306"
     volumes:
       - gameflix-reviews-mysql-data:/var/lib/mysql
     healthcheck:
