@@ -15,6 +15,10 @@ import java.io.IOException;
  * JwtFilterConfig) and, if valid, exposes the userId/username as request
  * attributes for downstream controllers. Registered on specific URL
  * patterns only, not globally - unrelated endpoints stay unauthenticated.
+ *
+ * GET /api/games is exempted even though the filter is registered on that
+ * path: browsing the game catalog should stay open to anonymous users,
+ * only creating a game (POST) requires a token.
  */
 public class JwtAuthFilter extends OncePerRequestFilter {
 
@@ -22,6 +26,11 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
     public JwtAuthFilter(JwtService jwtService) {
         this.jwtService = jwtService;
+    }
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        return "GET".equalsIgnoreCase(request.getMethod()) && "/api/games".equals(request.getRequestURI());
     }
 
     @Override
