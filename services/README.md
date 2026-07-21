@@ -29,24 +29,37 @@ never touches the root project's build.
   via `games-service`, posted a review via `reviews-service` using that
   same token. See `reviews-service/README.md`.
 
-**Phase 2 is now feature-complete** at the service level — all three
-services built, verified individually and together. Remaining: a
-gateway (see below) so the frontend can point at this stack without
-knowing which service owns which path.
+- **`gateway`** — built and verified. An nginx reverse proxy on **port
+  8080** (chosen over Spring Cloud Gateway deliberately — a tiny config
+  file and no JVM to manage, versus a whole extra reactive-stack Spring
+  Boot module just to forward paths). Routes `/api/users`, `/api/sessions`,
+  `/api/me` → `auth-service`; `/api/games` (and `/api/games/{id}`) →
+  `games-service`; `/api/reviews` → `reviews-service`. Verified two ways:
+  every route tested directly through port 8080 (all three services,
+  correct responses, correct status codes), and then — the real proof —
+  the **actual unmodified React frontend** pointed at this stack instead
+  of the monolith, driven through a real browser: register, login,
+  profile page, browsing an existing game, and adding a new game through
+  the UI all worked with zero frontend code changes.
+
+**Phase 2 is now fully complete.** All three services plus the gateway
+are built, verified individually, verified together, and verified to be
+a genuine drop-in replacement for the monolith from the frontend's point
+of view.
 
 ## Services
 
-| Service | Owns (schema) | Responsibility | Planned port |
+| Service | Owns (schema) | Responsibility | Port |
 |---|---|---|---|
+| `gateway` | — | Routes `/api/*` to the right service | 8080 |
 | `auth-service` | `auth_db` | Register, log in, issue/validate JWTs, `/api/me` | 8081 |
 | `games-service` | `games_db` | Games catalog CRUD | 8082 |
 | `reviews-service` | `reviews_db` | Post/list reviews; calls `games-service` to confirm a game exists before saving one | 8083 |
 
-A gateway (not yet built) will sit in front of all three on **port
-8080** — the same port the monolith uses today — so the frontend's
-existing `/api/*` proxy target doesn't need to change at all when
-pointed at this stack instead. (Run one stack or the other, not both at
-once — they'd collide on 8080.)
+The gateway sits in front of all three on **port 8080** — the same port
+the monolith uses today — so the frontend's existing `/api/*` proxy
+target doesn't need to change at all when pointed at this stack instead.
+(Run one stack or the other, not both at once — they'd collide on 8080.)
 
 ## Shared conventions across services
 
@@ -70,8 +83,10 @@ cp .env.example .env   # fill in real values
 docker compose up
 ```
 
-Starts all three services (`auth-service`, `games-service`,
-`reviews-service`), each with its own MySQL container. Each database is
+Starts all three services plus the `gateway`, each service with its own
+MySQL container. Point the frontend at `http://localhost:8080` (same as
+the monolith) and it works unmodified against this whole stack. Each
+database is
 also exposed to your host machine, so you can connect with a GUI tool
 (MySQL Workbench, DBeaver, etc.) or the `mysql` CLI directly, same as any
 local MySQL server:

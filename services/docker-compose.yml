@@ -119,6 +119,20 @@ services:
     networks:
       - gameflix-micro-net
 
+  gateway:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    container_name: gameflix-gateway
+    depends_on:
+      - auth-service
+      - games-service
+      - reviews-service
+    ports:
+      - "8080:8080"
+    networks:
+      - gameflix-micro-net
+
 networks:
   gameflix-micro-net:
     driver: bridge

@@ -268,9 +268,22 @@ Done so far:
   it couldn't verify.
 - **`services/docker-compose.yml`** now runs all three services
   together, each with its own MySQL container.
+- **`gateway` built and verified** — an nginx reverse proxy on port 8080
+  (the monolith's port), chosen over Spring Cloud Gateway deliberately:
+  routing `/api/*` to the right service is a small config file's worth
+  of work, not a reason to add a whole extra reactive-stack Spring Boot
+  module. Routes `/api/users`/`/api/sessions`/`/api/me` to `auth-service`,
+  `/api/games`(`/{id}`) to `games-service`, `/api/reviews` to
+  `reviews-service`. Verified two ways: every route directly through
+  port 8080 against all three real services, and then — the actual
+  point of building it — the **real, unmodified React frontend** pointed
+  at this gateway instead of the monolith and driven through a real
+  browser: register, login, the profile page, browsing an existing game,
+  and adding a new game through the UI all worked with zero frontend
+  code changes.
 
-**Phase 2 is feature-complete at the service level.** All three
-services exist, work individually, and interoperate correctly end to
-end. Not yet built: a gateway in front of them so the frontend can point
-at this stack using the same `/api/*` paths without knowing which
-service owns what.
+**Phase 2 is now fully complete.** All three services plus the gateway
+are built, verified individually, verified together, and proven to be a
+genuine drop-in replacement for the monolith from the frontend's point
+of view — not just claimed, actually driven through a browser against
+the real stack.
