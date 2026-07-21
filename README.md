@@ -6,10 +6,11 @@ CI/CD pipeline, a supply-chain security audit, and a React frontend on top.
 
 **Two versions live in this repo.** Everything below describes **v1**,
 the monolith at the repo root — this is the graded assignment deliverable
-and the one the frontend talks to by default. **v2**, an in-progress
-microservices split (Auth/Games/Reviews services), is being built
-alongside it in [`services/`](services/README.md) without touching v1 at
-all; see that directory for its own status and docs.
+and the one the frontend talks to by default. **v2**, a microservices
+split (Auth/Games/Reviews services + an nginx gateway), lives alongside
+it in [`services/`](services/README.md) without touching v1 at all —
+both are complete, and the same React frontend works unmodified against
+either one; see that directory for its own docs.
 
 ## Tech stack
 
@@ -24,12 +25,12 @@ all; see that directory for its own status and docs.
 
 ```
 src/main/java/com/gameflix/
-  controller/   AuthController, GameController, ProfileController
-  service/      UserService, GameService
+  controller/   AuthController, GameController, ProfileController, ReviewController
+  service/      UserService, GameService, ReviewService
   security/     JwtService, JwtAuthFilter, JwtFilterConfig
-  model/        User, Credential, Game
+  model/        User, Credential, Game, Review
   repository/   Spring Data JPA repositories
-  dto/          Request/response DTOs for auth
+  dto/          Request/response DTOs for auth and reviews
 
 frontend/
   src/pages/       HomePage, LoginPage, RegisterPage, GamesPage, ProfilePage
@@ -96,6 +97,8 @@ needed.
 | POST | `/api/games` | Yes | Create a game |
 | PUT | `/api/games/{id}` | Yes | Update a game's title/genre |
 | DELETE | `/api/games/{id}` | Yes | Delete a game |
+| GET | `/api/reviews?gameId={id}` | No | List reviews for a game |
+| POST | `/api/reviews` | Yes | Post a review (`gameId`, `rating` 1-5, `comment`) |
 
 "Auth required" means a `Authorization: Bearer <token>` header with a
 valid, unexpired JWT obtained from `POST /api/sessions`.
@@ -111,8 +114,9 @@ valid, unexpired JWT obtained from `POST /api/sessions`.
 | 9 | Backend unit tests | `src/test/java/com/gameflix/` |
 
 Beyond the original assignment scope: a React frontend (auth flow, games
-list with full CRUD for logged-in users, a profile page) was added on top,
-described above.
+list with full CRUD for logged-in users, a profile page, and per-game
+reviews) was added on top, described above — plus a full microservices
+version (`services/`), covered separately.
 
 ## Environment variables reference
 

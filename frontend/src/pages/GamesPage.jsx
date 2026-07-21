@@ -2,8 +2,87 @@ import { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import * as api from '../api/client';
 
+function ReviewsSection({ gameId, canReview }) {
+  const [reviews, setReviews] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
+  const [form, setForm] = useState({ rating: '5', comment: '' });
+  const [submitError, setSubmitError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+
+  function loadReviews() {
+    setLoading(true);
+    setLoadError('');
+    api
+      .get(`/reviews?gameId=${gameId}`)
+      .then(setReviews)
+      .catch((err) => setLoadError(err.message))
+      .finally(() => setLoading(false));
+  }
+
+  useEffect(loadReviews, [gameId]);
+
+  function updateField(field) {
+    return (event) => setForm((prev) => ({ ...prev, [field]: event.target.value }));
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setSubmitError('');
+    setSubmitting(true);
+    try {
+      await api.post('/reviews', { gameId, rating: Number(form.rating), comment: form.comment });
+      setForm({ rating: '5', comment: '' });
+      loadReviews();
+    } catch (err) {
+      setSubmitError(err.message);
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  return (
+    <div className="reviews-section">
+      {loading && <p>Loading reviews…</p>}
+      {loadError && <p className="error">{loadError}</p>}
+
+      {!loading && !loadError && (
+        <ul className="reviews-list">
+          {reviews.length === 0 && <li>No reviews yet.</li>}
+          {reviews.map((review) => (
+            <li key={review.id}>
+              <strong>{review.rating}/5</strong>
+              {review.comment && <span> — {review.comment}</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {canReview ? (
+        <form onSubmit={handleSubmit} className="inline-form">
+          <select value={form.rating} onChange={updateField('rating')}>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <input value={form.comment} onChange={updateField('comment')} placeholder="Comment" />
+          <button type="submit" disabled={submitting}>
+            {submitting ? 'Posting…' : 'Post review'}
+          </button>
+          {submitError && <p className="error">{submitError}</p>}
+        </form>
+      ) : (
+        <p>Log in to leave a review.</p>
+      )}
+    </div>
+  );
+}
+
 function GameListItem({ game, canEdit, onChanged }) {
   const [editing, setEditing] = useState(false);
+  const [showReviews, setShowReviews] = useState(false);
   const [form, setForm] = useState({ title: game.title, genre: game.genre || '' });
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
@@ -64,17 +143,23 @@ function GameListItem({ game, canEdit, onChanged }) {
     <li data-game-id={game.id}>
       <strong>{game.title}</strong>
       {game.genre && <span> — {game.genre}</span>}
-      {canEdit && (
-        <span className="game-actions">
-          <button type="button" className="link-button" onClick={() => setEditing(true)}>
-            Edit
-          </button>
-          <button type="button" className="link-button" onClick={handleDelete} disabled={busy}>
-            Delete
-          </button>
-        </span>
-      )}
+      <span className="game-actions">
+        {canEdit && (
+          <>
+            <button type="button" className="link-button" onClick={() => setEditing(true)}>
+              Edit
+            </button>
+            <button type="button" className="link-button" onClick={handleDelete} disabled={busy}>
+              Delete
+            </button>
+          </>
+        )}
+        <button type="button" className="link-button" onClick={() => setShowReviews((prev) => !prev)}>
+          {showReviews ? 'Hide reviews' : 'Reviews'}
+        </button>
+      </span>
       {error && <p className="error">{error}</p>}
+      {showReviews && <ReviewsSection gameId={game.id} canReview={canEdit} />}
     </li>
   );
 }

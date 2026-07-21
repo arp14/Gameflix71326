@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Set;
 
 /**
  * Validates a Bearer JWT on the requests it's registered for (see
@@ -16,11 +17,14 @@ import java.io.IOException;
  * attributes for downstream controllers. Registered on specific URL
  * patterns only, not globally - unrelated endpoints stay unauthenticated.
  *
- * GET /api/games is exempted even though the filter is registered on that
- * path: browsing the game catalog should stay open to anonymous users,
- * only creating a game (POST) requires a token.
+ * GET requests to these paths are exempted even though the filter is
+ * registered on them: browsing the game catalog and reading reviews
+ * should stay open to anonymous users - only creating a game or posting
+ * a review (POST) requires a token.
  */
 public class JwtAuthFilter extends OncePerRequestFilter {
+
+    private static final Set<String> OPEN_GET_PATHS = Set.of("/api/games", "/api/reviews");
 
     private final JwtService jwtService;
 
@@ -30,7 +34,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
-        return "GET".equalsIgnoreCase(request.getMethod()) && "/api/games".equals(request.getRequestURI());
+        return "GET".equalsIgnoreCase(request.getMethod()) && OPEN_GET_PATHS.contains(request.getRequestURI());
     }
 
     @Override

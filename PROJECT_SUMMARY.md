@@ -287,3 +287,46 @@ are built, verified individually, verified together, and proven to be a
 genuine drop-in replacement for the monolith from the frontend's point
 of view — not just claimed, actually driven through a browser against
 the real stack.
+
+---
+
+## Part 3: Reviews, added to both v1 and v2
+
+`reviews-service` (Phase 2) had a working reviews feature with no way to
+actually use it — the frontend was built in Phase 1, before reviews
+existed. Closing that gap meant adding the same feature to **both**
+backends, using the identical API shape (`Review`/`CreateReviewRequest`
+fields, same status codes) so one frontend implementation works against
+either one unmodified.
+
+**Monolith (`src/main/java/com/gameflix`)**: new `Review` entity,
+`ReviewRepository`, `ReviewService`, `ReviewController` —
+`GET /api/reviews?gameId={id}` (open) and `POST /api/reviews` (JWT
+required, extended `JwtAuthFilter`'s open-GET exemption set and
+`JwtFilterConfig`'s registered patterns to cover it). The one deliberate
+difference from `reviews-service`: validating "does this game exist"
+is a direct `gameRepository.existsById(...)` call here, not a live HTTP
+request — the monolith has the games table in the same database and
+JVM, so there's no cross-service boundary to cross. `Review` is
+explicitly `@Table(name = "reviews")` from the start this time (the
+games_db/auth_db table-naming and column-type mismatches earlier taught
+that lesson before it could repeat here).
+
+**Frontend (`frontend/src/pages/GamesPage.jsx`)**: each game in the list
+now has a "Reviews" toggle that expands to show existing reviews (rating
++ comment) and, for logged-in users, a form to post one (a 1–5 `<select>`
++ comment field, calling `POST /api/reviews`). Logged-out users see the
+existing reviews plus a "log in to leave a review" prompt instead of the
+form — same UI-gating pattern used for adding/editing games.
+
+**Verified against both backends with the identical Playwright script,
+unmodified between runs** (only a throwaway test username changed to
+avoid a duplicate-registration conflict): against the monolith, and
+again against the microservices stack behind the gateway. Both runs
+confirmed the same six things — an existing review visible while logged
+out, no review form shown for anonymous users, a "no reviews yet" empty
+state, the review form appearing once logged in, and a newly posted
+review showing up immediately in the list. Same test, same assertions,
+same result against either backend — that's the actual proof reviews
+now work identically in both versions, not just that the code was
+written twice.
